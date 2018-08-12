@@ -2,6 +2,8 @@ $(window).on("load",function(){
 
 	$(".scroll").mCustomScrollbar();
 
+    $(".scroll-box").mCustomScrollbar();
+
 });
 
 $(document).ready(function() {		
