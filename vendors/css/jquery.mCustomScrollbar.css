@@ -1271,16 +1271,20 @@ yx-axis
     top: 0;
     left: 0;
     bottom: 0;
-    right: -4px;
+    right: -10px;
     height: auto;
 }
 
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+.scroll-box .mCSB_scrollTools .mCSB_draggerContainer {
+    right: -4px;
+}
+
+.scroll-box .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     width: 12px;
     background-color: #48b9e3;
 }
 
-.mCSB_scrollTools .mCSB_draggerRail {
+.scroll-box .mCSB_scrollTools .mCSB_draggerRail {
     width: 12px;
     background-color: #d9d9d9;
 }

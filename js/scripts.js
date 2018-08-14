@@ -171,7 +171,15 @@ $(document).ready(function() {
 
     // -------------------------
 
-    
+    $(".fade-block .close_btn").click(function() {
+
+        $(this).closest(".fade-block").slideUp(300);
+
+    });
+
+    // -------------------------
+
+    $("input[type='tel']").mask("+7 (999) 999-99-99");
 
 });
 
