@@ -181,6 +181,24 @@ $(document).ready(function() {
 
     $("input[type='tel']").mask("+7 (999) 999-99-99");
 
+    // -------------------------
+
+    $(".table-row .checkbox input").click(function() {
+
+        parentBlock = $(this).closest(".table-row");
+
+        if($(this).prop("checked")) {
+
+            parentBlock.addClass("active");
+
+        } else {
+
+            parentBlock.removeClass("active");
+
+        }
+
+    });
+
 });
 
 function getNavLinkHeight() {

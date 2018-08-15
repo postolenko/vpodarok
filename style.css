@@ -529,7 +529,7 @@ textarea:focus {
 
 /*-- /Icons --*/
 
-/*-- Links --*/
+/*-- Pills --*/
 
 .green-pill {
     display: block;
@@ -580,6 +580,66 @@ textarea:focus {
 .green-pill:hover {
     background-color: #76b87c;
 }
+
+.transparent-pill {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 178px;
+    padding: 8px 2% 8px 2%;
+    border-width: 1px;
+    border-color: rgb(212, 79, 104);
+    border-style: solid;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: transparent;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #e2939a;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent-pill:link,
+.transparent-pill:visited {
+    background-color: transparent;
+    color: #e2939a;
+}
+
+.transparent-pill.active,
+.transparent-pill:active {
+    background-color: rgb(212, 79, 104);
+    color: #ffffff;
+}
+
+.transparent-pill:hover {
+    background-color: rgb(212, 79, 104);
+    color: #ffffff;
+}
+
+/*-- Pills --*/
+
+/*-- Links --*/
+
 .blue-link {
     display: inline;
     border-bottom: 1px solid #6ba9d9;
@@ -661,6 +721,90 @@ textarea:focus {
 }
 
 .dashed_link:hover {
+    border-bottom: 1px dashed transparent;
+}
+
+.dashed_link_2 {
+    display: inline;
+    border-bottom: 1px dashed #6ba9d9;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #6ba9d9;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.dashed_link_2:link,
+.dashed_link_2:visited {
+    border-bottom: 1px dashed #6ba9d9;
+}
+
+.dashed_link_2.active,
+.dashed_link_2:active {
+    border-bottom: 1px dashed transparent;
+}
+
+.dashed_link_2:hover {
+    border-bottom: 1px dashed transparent;
+}
+
+.green_link {
+    display: inline;
+    border-bottom: 1px dashed #86d28d;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #86d28d;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green_link:link,
+.green_link:visited {
+    border-bottom: 1px dashed #86d28d;
+}
+
+.green_link.active,
+.green_link:active {
+    border-bottom: 1px dashed transparent;
+}
+
+.green_link:hover {
     border-bottom: 1px dashed transparent;
 }
 
@@ -3268,6 +3412,324 @@ p i.checked {
 }
 
 /*-- /Section 1 - Profile --*/
+
+/*-- Section 1 - Cards --*/
+
+.cards_wrapp {
+    padding: 0 0 19px 0;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.cards_header {
+    padding: 0 0 9px 0;
+    text-align: right;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+}
+
+.cards_header > .col {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 18px 3px 18px;
+}
+
+.pills_wrapp {
+    margin: 0 -5px;
+}
+
+.pills_wrapp div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.green-pill_3 {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 180px;
+    padding: 10px 2% 8px 2%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #86d28d;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green-pill_3:link,
+.green-pill_3:visited {
+    background-color: #86d28d;
+}
+
+.green-pill_3.active,
+.green-pill_3:active {
+    background-color: #76b87c;
+}
+
+.green-pill_3:hover {
+    background-color: #76b87c;
+}
+
+.card_table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card_table .table-row {
+    display: table-row;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.05);
+    -webkit-transition-property: background, box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.card_table .table-row.active {
+    background-color: #e7eff1;
+    box-shadow: none;
+}
+
+.card_table .table-row .cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 19px 5px 17px 5px;
+}
+
+.card_table .table-row .cell-1 {
+    width: 42px;
+    padding-left: 1.5%;
+}
+
+.card_table .table-row .cell-2 {
+    width: 86px;
+}
+
+.card_table .table-row .cell-3 {
+    width: 156px;
+}
+
+.card_table .table-row .cell-4 {
+    width: 123px;
+    text-align: center;
+}
+
+.card_table .table-row .cell-5 {
+    width: 137px;
+    text-align: center;
+}
+
+.card_table .table-row .cell-6 {
+    width: auto;
+    text-align: center;
+}
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.checkbox label {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-color: rgb(118, 118, 118);
+    border-style: solid;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.checkbox input:checked + label:after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background-image: url(img/sprite_2.png);
+    background-repeat: no-repeat;
+    background-position: -89px -6px;
+}
+
+.card_table .img-box {
+    max-width: 74px;
+    height: 45px;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.card_table .img-box img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card_table h3 {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.card_table p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #777575;
+}
+
+p.term {
+    font-size: 10px;
+    line-height: 13px;
+    color: #777575;
+}
+
+p.active_p {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    color: #86d28d;
+}
+
+p.executed {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    color: #787676;
+}
+
+p.overdue {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    color: #921f34;
+}
+
+p.grey-p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #d7d6d6;
+}
+
+.price_2 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.ruble {
+    display: inline-block;
+    vertical-align: top;
+    width: 7px;
+    height: 9px;
+    background-image: url(img/ruble.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.present_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 27px;
+    height: 27px;
+    background-image: url(img/sprite_2.png);
+    background-repeat: no-repeat;
+    background-position: -40px 0;
+}
+
+p .ruble {
+    vertical-align: baseline;
+}
+
+.present_wrapp p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card_2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 23px;
+    height: 16px;
+    background-image: url(img/sprite_2.png);
+    background-repeat: no-repeat;
+    background-position: -1px -6px;
+}
+
+.present_wrapp p.p-2 {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #787676;
+}
+
+/*-- /Section 1 - Cards --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
