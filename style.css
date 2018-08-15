@@ -3660,6 +3660,7 @@ p.executed {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
+    font-weight: 500;
     color: #787676;
 }
 
@@ -3667,12 +3668,14 @@ p.overdue {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
+    font-weight: 500;
     color: #921f34;
 }
 
 p.grey-p {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 500;
     color: #d7d6d6;
 }
 
