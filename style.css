@@ -3416,7 +3416,6 @@ p i.checked {
 /*-- Section 1 - Cards --*/
 
 .cards_wrapp {
-    padding: 0 0 19px 0;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
@@ -3498,6 +3497,10 @@ p i.checked {
     background-color: #76b87c;
 }
 
+.scroll_box_2 {
+    height: 267px;
+}
+
 .card_table {
     display: table;
     width: 100%;
@@ -3538,7 +3541,7 @@ p i.checked {
 .card_table .table-row .cell {
     display: table-cell;
     vertical-align: middle;
-    padding: 19px 5px 17px 5px;
+    padding: 20px 5px 18px 5px;
 }
 
 .card_table .table-row .cell-1 {
