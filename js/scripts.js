@@ -181,7 +181,7 @@ $(document).ready(function() {
 
     $("input[type='tel']").mask("+7 (999) 999-99-99");
 
-    $("input.input_type").mask("9999 9999 9999 9999");
+    $("input.input_type").mask("999 999 999 999");
 
     // -------------------------
 

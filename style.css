@@ -633,7 +633,7 @@ textarea:focus {
     display: block;
     width: 100%;
     cursor: pointer;
-    padding: 7px 2% 7px 2%;
+    padding: 5px 2% 9px 2%;
     background-color: #cf546b;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 24px;
@@ -3945,7 +3945,7 @@ p .ruble {
 
 .sumpay {
     height: 46px;
-    padding: 2px 10px 3px 10px;
+    padding: 3px 10px 3px 10px;
     border-width: 1px;
     border-color: rgb(118, 118, 118);
     border-style: solid;
@@ -3966,7 +3966,7 @@ p .ruble {
 .sumpay_input {
     display: block;
     width: 100%;
-    margin: 1px 0 0 0;
+    margin: 2px 0 0 0;
     border: 1px solid transparent;
     font-size: 19px;
     line-height: 20px;
