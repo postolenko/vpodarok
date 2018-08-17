@@ -1538,7 +1538,7 @@ textarea:focus {
     background: #b2d179;
 }
 
-.main-nav li:nth-child(1) a:hover {
+/*.main-nav li:nth-child(1) a:hover {
     color: #55bde4;
 }
 
@@ -1572,7 +1572,7 @@ textarea:focus {
 
 .main-nav li:nth-child(9) a:hover {
     color: #b2d179;
-}
+}*/
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
