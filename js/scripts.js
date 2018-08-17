@@ -181,6 +181,8 @@ $(document).ready(function() {
 
     $("input[type='tel']").mask("+7 (999) 999-99-99");
 
+    $("input.input_type").mask("9999 9999 9999 9999");
+
     // -------------------------
 
     $(".table-row .checkbox input").click(function() {
@@ -194,6 +196,38 @@ $(document).ready(function() {
         } else {
 
             parentBlock.removeClass("active");
+
+        }
+
+    });
+
+    // -------------------------
+
+    $("[data-card-num]").click(function(e) {
+
+        e.preventDefault();
+
+        var cardNum = $(this).attr("data-card-num");
+
+        cardNumInput = $(this).closest(".dropdown_input").find(".input_type");
+
+        console.log(cardNum);
+
+        cardNumInput.val(cardNum);
+
+    });
+
+    $(".show_list").click(function() {
+
+        var dropdownList = $(this).closest(".dropdown_input").find(".dropdown_list");
+
+        if( dropdownList.is(":hidden") ) {
+
+            dropdownList.slideDown(300);
+
+        } else {
+
+            dropdownList.slideUp(300);
 
         }
 

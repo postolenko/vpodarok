@@ -2,3 +2,4 @@
 # http://postolenko.github.io/vpodarok/catalog.html
 # http://postolenko.github.io/vpodarok/profile.html
 # http://postolenko.github.io/vpodarok/universal_cards.html
+# http://postolenko.github.io/vpodarok/balance.html
