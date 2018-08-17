@@ -3832,7 +3832,7 @@ p .ruble {
     height: 1px;
     background-color: #e4e4e4;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     right: 0;
 }
 
