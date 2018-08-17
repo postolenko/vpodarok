@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </head>
 
@@ -125,7 +126,7 @@
 		<!-- Content -->
 			<div class="content">
 
-				<!-- Section 1 - Profile -->
+				<!-- Section 1 - Answers -->
 
 				<section>
 
@@ -141,45 +142,60 @@
 						<div class="two-cols-templ_2 clearfix">
 							<div class="left">
 								<ul class="nav_bar">
-									<li><a href="#" class="active">Мой профиль</a></li>
-									<li><a href="#">Мои универсальные карты</a></li>
+									<li><a href="#">Мой профиль</a></li>
+									<li><a href="#" >Мои универсальные карты</a></li>
 									<li><a href="#">Баланс</a></li>
 									<li><a href="#">Активация карт</a></li>
-									<li><a href="#">Вопрос-ответ</a></li>
+									<li><a href="#" class="active">Вопрос-ответ</a></li>
 								</ul>
 							</div>
 							<div class="right">
-								<div class="profile clearfix">
-									<div class="left">
-										<div class="profile_img">
-											<img src="img/photo.jpg" alt="" />
-										</div>
-										<a href="#" class="grey-link">Изменить фото профиля</a>
-									</div>
-									<div class="right">
-										<div class="title_wrapp">
-											<h3>Иванова Иванна Ивановна</h3>
-											<a href="#" class="grey-link">Редактировать имя</a>
-										</div>
-										<h3>Обо мне</h3>
-										<div class="thumb_4">
-											<div class="col-1">
-												<p>Email:</p>
+								<div class="white_wrapp">
+									<div class="white_inner">
+										<h3>Вопрос-ответ</h3>
+										<div class="questions_wrapp">
+											<h2>Сообщение администратору магазина</h2>
+											<h3>Создайте сообщение:</h3>
+											<div class="message_form">
+												<div class="input_wrapp">
+													<input type="text" placeholder="Тема" />
+												</div>
+												<div class="input_wrapp">
+													<textarea placeholder="Сообщение"></textarea>
+												</div>
+												<div class="two-cols-templ clearfix">
+													<div class="left">
+														<div class="upload_wrapp">
+															<input type="file" id="upl" name="" />
+															<label for="upl">Загрузить файл <i class="upload"></i></label>
+														</div>
+													</div>
+													<div class="right">
+														<button type="submit" class="red-pill_3">Отправить сообщение</button>
+													</div>
+												</div>
 											</div>
-											<div class="col-2">
-												<p>ivanov@mail.ru</p>
-											</div>
-										</div>
-										<h4>Для связи по активации карт:</h4>
-										<div class="thumb_4">
-											<div class="col-1">
-												<p>Телефон:</p>
-											</div>
-											<div class="col-2">
-												<p>+7 (095) 584-84-48<i class="checked"></i></p>
-												<div class="inpt_wrapp_2">
-													<i class="flag"></i>
-													<input type="tel" placeholder="+7 (___) ___-__-__" alt="" />
+											<h2>Нас часто спрашивают</h2>
+											<div class="accordeon_wrapp">
+												<div class="accordeon_item">
+													<div class="accordeon_item_title">
+														<h3>Я заказал(а) обмен на сертификат. Как скоро придет на емейл?</h3>
+													</div>
+													<div class="dropdown_block">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+														<h4>Администратор:</h4>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+													</div>
+												</div>
+												<div class="accordeon_item active">
+													<div class="accordeon_item_title">
+														<h3>Я заказал(а) обмен на сертификат. Как скоро придет на емейл?</h3>
+													</div>
+													<div class="dropdown_block">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+														<h4>Администратор:</h4>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -192,7 +208,7 @@
 
 				</section>
 
-				<!-- /Section 1 - Profile -->
+				<!-- /Section 1 - Answers -->
 
 			</div>
 		<!-- /Content -->

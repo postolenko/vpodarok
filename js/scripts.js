@@ -10,6 +10,9 @@ var tabsParent;
 var attrForTabLink;
 var activeTabRadio;
 
+var parentWrapp;
+var dropdownBlock;
+
 $(window).load(function() {
 
     $("select").each(function() {
@@ -228,6 +231,65 @@ $(document).ready(function() {
         } else {
 
             dropdownList.slideUp(300);
+
+        }
+
+    });
+
+    // ---------------------------------
+
+    $(".accordeon_wrapp").each(function() {
+
+        $(this).find(".accordeon_item").each(function() {
+
+            dropdownBlock = $(this).closest(".accordeon_item").find(".dropdown_block");
+
+            if( !$(this).hasClass("active") ) {
+
+                dropdownBlock.css({
+                    "display" : "none"
+                });
+
+            }
+
+        });
+
+    });
+
+
+    $(".accordeon_item_title").click(function(e) {
+
+        e.preventDefault();
+
+        parentBlock = $(this).closest(".accordeon_item");
+
+        dropdownBlock = parentBlock.find(".dropdown_block");
+
+        if( parentBlock.hasClass("active") || dropdownBlock.is(":visible") ) {
+
+            dropdownBlock.slideUp(300);
+
+            parentBlock.removeClass("active");
+
+        } else {
+
+            parentWrapp = $(this).closest(".accordeon_wrapp");
+
+            parentWrapp.find(".accordeon_item").each(function() {
+
+                if( $(this).hasClass("active") || dropdownBlock.is(":visible") ) {
+
+                    $(this).find(".dropdown_block").slideUp(300);
+
+                    $(this).removeClass("active");
+
+                }
+
+            });
+
+            dropdownBlock.slideDown(300);
+
+            parentBlock.addClass("active");
 
         }
 

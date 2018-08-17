@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </head>
 
@@ -125,7 +126,7 @@
 		<!-- Content -->
 			<div class="content">
 
-				<!-- Section 1 - Profile -->
+				<!-- Section 1 - Card Activation -->
 
 				<section>
 
@@ -141,47 +142,68 @@
 						<div class="two-cols-templ_2 clearfix">
 							<div class="left">
 								<ul class="nav_bar">
-									<li><a href="#" class="active">Мой профиль</a></li>
-									<li><a href="#">Мои универсальные карты</a></li>
+									<li><a href="#">Мой профиль</a></li>
+									<li><a href="#" >Мои универсальные карты</a></li>
 									<li><a href="#">Баланс</a></li>
-									<li><a href="#">Активация карт</a></li>
+									<li><a href="#" class="active">Активация карт</a></li>
 									<li><a href="#">Вопрос-ответ</a></li>
 								</ul>
 							</div>
 							<div class="right">
-								<div class="profile clearfix">
-									<div class="left">
-										<div class="profile_img">
-											<img src="img/photo.jpg" alt="" />
-										</div>
-										<a href="#" class="grey-link">Изменить фото профиля</a>
-									</div>
-									<div class="right">
-										<div class="title_wrapp">
-											<h3>Иванова Иванна Ивановна</h3>
-											<a href="#" class="grey-link">Редактировать имя</a>
-										</div>
-										<h3>Обо мне</h3>
-										<div class="thumb_4">
-											<div class="col-1">
-												<p>Email:</p>
+								<div class="white_wrapp">
+									<div class="white_inner">
+										<h3>Активировать Универсальную карту</h3>
+										<p>Итак, вы стали счастливым обладателем универсальной подарочной карты от компании Vpodarok.ru Чтобы получить один из товаров или впечатлений, которые теперь Вам доступны, необходимо активировать универсальную карту.</p>
+										<p>Это можно сделать двумя способами: заполнить поля ниже в круглосуточном режиме - и Ваша активация будет пройдена, 
+										либо позвонить нам в будни с 10:00 до 20:00 по телефону МСК <a href="tel:+74959885095">+7(495) 988-50-95</a>, СПБ <a href="tel:+78126121282">+7(812) 612-12-82</a>, регионы <a href="tel:88005551612">8(800) 555-16-12</a>.</p>
+										<div class="two-cards clearfix">
+											<div class="left">
+												<form>
+													<div class="card_1">
+														<div class="card_1_header offset-ziro">
+															<div class="card_logo_wrapp">
+																<img class="card_logo" src="img/logo.png" alt="" />
+															</div>
+														</div>
+														<div class="input_wrapp">
+															<input type="text" class="input_type" placeholder="Введите номер карты">
+														</div>
+														<div class="input_wrapp">
+															<input type="text" placeholder="Введите код активации карты">
+														</div>
+														<div class="two-cols_5">
+															<div class="left">
+																<div class="captcha_wrapp">
+																	<img src="img/captcha.jpg" altt="" />
+																</div>
+																<button type="button" class="refresh_btn"><i class="refresh"></i>Обновить картинку</button>
+															</div>
+															<div class="right">
+																<div class="input_wrapp input_wrapp_2">
+																	<input type="text" placeholder="Код с картинки" />
+																</div>
+															</div>
+														</div>
+														<div class="submit_wrapp">
+															<button type="submit" class="red-pill_2">Активировать карту</button>
+														</div>
+													</div>
+												</form>
 											</div>
-											<div class="col-2">
-												<p>ivanov@mail.ru</p>
-											</div>
-										</div>
-										<h4>Для связи по активации карт:</h4>
-										<div class="thumb_4">
-											<div class="col-1">
-												<p>Телефон:</p>
-											</div>
-											<div class="col-2">
-												<p>+7 (095) 584-84-48<i class="checked"></i></p>
-												<div class="inpt_wrapp_2">
-													<i class="flag"></i>
-													<input type="tel" placeholder="+7 (___) ___-__-__" alt="" />
+											<div class="right">
+												<div class="card2-img_wrapp">
+													<div class="card_desc cd_1">
+														<p>Номер карты</p>
+													</div>
+													<div class="card_desc cd_2">
+														<p>Код активации карты</p>
+													</div>
+													<img class="card2_img" src="img/card_2.jpg" alt="" />
 												</div>
 											</div>
+										</div>
+										<div class="white_inner_footer">
+											<p><span class="red">Внимание!</span> Механическое повреждение кода делает универсальную карту исполненной: карта с поврежденным стираемым слоем восстановлению и обмену не подлежит</p>
 										</div>
 									</div>
 								</div>
@@ -192,7 +214,7 @@
 
 				</section>
 
-				<!-- /Section 1 - Profile -->
+				<!-- /Section 1 - Card Activation -->
 
 			</div>
 		<!-- /Content -->
