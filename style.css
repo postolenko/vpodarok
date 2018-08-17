@@ -3826,6 +3826,16 @@ p .ruble {
     padding: 10px 0 10px 10px;
 }
 
+.two-cols-templ_3:before {
+    content: '';
+    width: calc(62% - 10px);
+    height: 1px;
+    background-color: #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .two-cols-templ_3 h3 {
     padding: 6px 0 12px 0;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
