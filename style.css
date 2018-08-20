@@ -2789,6 +2789,7 @@ p.date {
 
 .catalog-header h4 {
     padding: 3px 0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.004);
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -2882,6 +2883,56 @@ p.date {
     font-weight: bold;
 }
 
+.checkbox_2 {
+    margin: 8px 0;
+    padding-right: 10px;
+    position: relative;
+}
+
+.checkbox_2 input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    padding: 0;
+    border: none;
+}
+
+.checkbox_2 label {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    padding: 0 0 0 29px;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #4a4d50;
+}
+
+.checkbox_2 label:before {
+    display: block;
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/radio_sprite.png);
+    background-repeat: no-repeat;
+    background-position: -1px -31px;
+}
+
+.checkbox_2 input:checked + label {
+    color: #5f9f0d;
+}
+
+.checkbox_2 input:checked + label:before {
+    background-position: -1px -2px;
+}
+
 .search_wrapp_2 {
     margin: 12px 0;
     position: relative;
@@ -2943,8 +2994,25 @@ p.date {
     bottom: 9px;
     left: 0;
     background: #ffffff;
-    width: calc(100% - 35px);
-    padding: 12px 0 5px 29px;
+    width: calc(100% - 12px);
+    padding: 12px 0 5px 48px;
+}
+
+.scroll-box:after {
+    content: "";
+    width: 80%;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 83%;
+    height: 20px;
+    -webkit-box-shadow: 0 -3px 9px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 -3px 9px 0 rgba(0,0,0,.2);
+    box-shadow: 0 -3px 9px 0 rgba(0,0,0,.2);
+    position: absolute;
+    bottom: 25px;
+    left: 10%;
 }
 
 .thumbnails_3 {
@@ -3181,6 +3249,7 @@ p.date {
 .pagination li a {
     display: inline-block;
     vertical-align: top;
+    padding-top: 1px;
     background: transparent;
     min-width: 32px;
     height: 33px;
