@@ -277,7 +277,7 @@ h1 {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 24px;
     line-height: 28px;
-    font-weight: normal;
+    font-weight: 500;
     color: #333333;
 }
 
@@ -583,7 +583,7 @@ textarea:focus {
     display: block;
     cursor: pointer;
     padding: 13px 2% 13px 2%;
-    background-color: #cf546b;
+    background-color: #ed536d;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -594,39 +594,43 @@ textarea:focus {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-transition-property: background;
+    -webkit-transition-property: box-shadow;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background;
+    -moz-transition-property: box-shadow;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background;
+    -ms-transition-property: box-shadow;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background;
+    -o-transition-property: box-shadow;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background;
+    transition-property: box-shadow;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .red-pill:link,
 .red-pill:visited {
-    background-color: #cf546b;
+    box-shadow: none;
 }
 
 .red-pill:active,
 .red-pill.active {
-    background-color: #ee3f5f;
+    -webkit-box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
+    -moz-box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
+    box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
 }
 
 .red-pill:hover {
-    background-color: #ee3f5f;
+    -webkit-box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
+    -moz-box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
+    box-shadow: 0px 4px 9px 0px rgba(237,83,109,.3);
 }
 
 .red-pill_2 {
@@ -1091,25 +1095,6 @@ textarea:focus {
     line-height: 14px;
     font-weight: normal;
     color: #fec60a;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: all;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: all;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: all;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: all;
-    transition-duration: .3s;
-    transition-timing-function: ease;
 }
 
 .tels_wrapp a:link,
@@ -1119,14 +1104,15 @@ textarea:focus {
 
 .tels_wrapp a:active,
 .tels_wrapp a.active {
-    color: #ffffff;
+    color: #fec60a;
 }
 
 .tels_wrapp a:hover {
-    color: #ffffff;
+    color: #fec60a;
 }
 
 .header-row-1 .col-2 p {
+    letter-spacing: 1px;
     font-family: "Roboto Condensed", "Arial", "Verdana", sans-serif;
     font-size: 12px;
     line-height: 16px;
@@ -1395,7 +1381,6 @@ textarea:focus {
 .main-nav li a {
     display: block;
     position: relative;
-    /*padding: 0 10px;*/
     text-align: center;
     font-family: "Roboto Condensed", "Arial", "Verdana", sans-serif;
     font-size: 14px;
@@ -1538,41 +1523,9 @@ textarea:focus {
     background: #b2d179;
 }
 
-/*.main-nav li:nth-child(1) a:hover {
-    color: #55bde4;
-}
-
-.main-nav li:nth-child(2) a:hover {
-    color: #77b97e;
-}
-
-.main-nav li:nth-child(3) a:hover {
-    color: #d44f68;
-}
-
-.main-nav li:nth-child(4) a:hover {
-    color: #d08c4b;
-}
-
-.main-nav li:nth-child(5) a:hover {
-    color: #686aad;
-}
-
-.main-nav li:nth-child(6) a:hover {
-    color: #4b79bb;
-}
-
-.main-nav li:nth-child(7) a:hover {
+.main-nav li a.pink_link {
     color: #e2939a;
 }
-
-.main-nav li:nth-child(8) a:hover {
-    color: #d3b135;
-}
-
-.main-nav li:nth-child(9) a:hover {
-    color: #b2d179;
-}*/
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -1701,6 +1654,7 @@ textarea:focus {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 13px;
     line-height: 14px;
+    font-weight: 500;
     color: #5c99cf;
 }
 
@@ -1886,7 +1840,7 @@ textarea:focus {
     text-transform: none;
     font-size: 30px;
     line-height: 37px;
-    font-weight: normal;
+    font-weight: bold;
     color: #21384a;
 }
 
@@ -1925,7 +1879,7 @@ textarea:focus {
 .rating_wrapp p {
     display: inline-block;
     vertical-align: top;
-    margin: 2px 0 0 12px;
+    margin: 3px 0 0 12px;
     font-size: 12px;
     line-height: 14px;
     font-weight: normal;
@@ -1951,7 +1905,7 @@ textarea:focus {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    font-weight: normal;
+    font-weight: bold;
     color: #21384a;
 }
 
@@ -2200,6 +2154,7 @@ textarea:focus {
     font-size: 22px;
     line-height: 27px;
     color: #55bde4;
+    font-weight: 500;
     -webkit-transition-property: all;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -2363,10 +2318,6 @@ textarea:focus {
     padding: 21px 0 0 0;
 }
 
-.tabs {
-    /*margin-bottom: 100px;*/
-}
-
 .tabs-links {
     background: #cbedf5;
     -webkit-border-radius: 5px;
@@ -2447,6 +2398,8 @@ textarea:focus {
 
 .tabs-content .tab {
     opacity: 0;
+    height: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: -999999px;
@@ -2473,6 +2426,8 @@ textarea:focus {
 }
 
 .tabs-content .radio-tab:checked + .tab {
+    height: auto;
+    overflow: none;
     position: relative;
     opacity: 1;
     left: 0;

@@ -1,3 +1,10 @@
+var indexRating = 0;
+var idRating;
+var el;
+var currentRating;
+var maxRating;
+var myRating;
+
 $(window).on("load",function(){
 
 	$(".scroll").mCustomScrollbar();
@@ -20,7 +27,7 @@ $(document).ready(function() {
 	$(".big_slider").not(".slick-initialized").slick({
         dots: true,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 1,
@@ -32,29 +39,14 @@ $(document).ready(function() {
     $(".miniature_slider").not(".slick-initialized").slick({
         dots: false,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
         asNavFor: ".big_slider"
-    //     responsive: [
-		  //   {
-		  //     breakpoint: 700,
-		  //     settings: {
-		  //       arrows: true
-		  //     }
-		  //   }
-		  // ]
     });
-
-    var indexRating = 0;
-	var idRating;
-	var el;
-	var currentRating;
-	var maxRating;
-	var myRating;
 
 	if( $(".rating").length > 0 )  {
 
@@ -74,46 +66,27 @@ $(document).ready(function() {
     $(".brands-slider").not(".slick-initialized").slick({
         dots: false,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
-        speed: 1200,
+        speed: 700,
         slidesToShow: 6,
-        slidesToScroll: 1
-    //     responsive: [
-          //   {
-          //     breakpoint: 700,
-          //     settings: {
-          //       arrows: true
-          //     }
-          //   }
-          // ]
+        slidesToScroll: 3
     });
 
     $(".reviews-slider").not(".slick-initialized").slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
         slidesToShow: 1,
         slidesToScroll: 1,
         appendDots: $(".reviews-slider_wrapp .append_dots")
-        // fade: true
-    //     responsive: [
-          //   {
-          //     breakpoint: 700,
-          //     settings: {
-          //       arrows: true
-          //     }
-          //   }
-          // ]
     });
 
     $(".slick-arrow_2").click(function() {
 
         var sliderName = $(this).closest("[data-controls]").attr('data-controls');
-
-        console.log(sliderName);
 
         parentBlock = $("[data-slider = '"+ sliderName +"']");
 
