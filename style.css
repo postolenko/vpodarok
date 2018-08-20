@@ -2982,6 +2982,7 @@ p.date {
 
 .scroll-box {
     height: 350px;
+    overflow: hidden;
 }
 
 .scroll-box .mCustomScrollBox {
@@ -3013,6 +3014,22 @@ p.date {
     position: absolute;
     bottom: 25px;
     left: 10%;
+}
+
+.up {
+    display: inline-block;
+}
+
+.down {
+    display: none;
+}
+
+.hide .up {
+    display: none;
+}
+
+.hide .down {
+    display: inline-block;
 }
 
 .thumbnails_3 {

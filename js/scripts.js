@@ -295,6 +295,50 @@ $(document).ready(function() {
 
     });
 
+    // ----------------------
+
+    var fullHeight;
+    var hideHeight;
+
+    $(".scroll-box").each(function() {
+
+        fullHeight = parseInt( $(this).attr("data-fullheight") );
+        hideHeight = parseInt( $(this).attr("data-hideheight") );
+
+        console.log($(this).height() +"   "+ fullHeight);
+
+        if( $(this).height() < fullHeight ) {
+             $(this).closest(".scroll-box_wrapp").find(".show_more").addClass("hide");
+        }
+
+    });
+
+    $(".show_more").click(function(e) {
+
+        e.preventDefault();
+
+        var scrollBox = $(this).closest(".scroll-box_wrapp").find(".scroll-box");
+
+        if( $(this).hasClass("hide") ) {
+
+            scrollBox.animate({
+                "height" : 350 + "px"
+            }, 400);
+
+            $(this).removeClass("hide");
+
+        } else {
+
+            scrollBox.animate({
+                "height" : 200 + "px"
+            }, 400);
+
+            $(this).addClass("hide");
+
+        }
+
+    });
+
 });
 
 function getNavLinkHeight() {
