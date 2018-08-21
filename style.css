@@ -138,6 +138,8 @@
 }
 
 html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -2857,17 +2859,14 @@ p.date {
 
 /*-- Section 1 - Catalog Page --*/
 
-.catalog-header {
-
-}
-
 .catalog-header h4 {
     padding: 3px 0;
     text-shadow: 1px 1px 1px rgba(0,0,0,.004);
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    font-weight: normal;
+    /*font-weight: normal;*/
+    font-weight: 500;
     color: #757575;
 }
 
@@ -2903,6 +2902,11 @@ p.date {
     display: inline-block;
     vertical-align: middle;
     padding: 6px 7px;
+}
+
+.inline-header p,
+.inline-header p a {
+    font-weight: 500;
 }
 
 .select_wrapp_2 {
@@ -3379,12 +3383,12 @@ p.date {
 
 .pagination li a.active,
 .pagination li a:active {
-    background: #ed536c;
+    background: #ed536d;
     color: #ffffff;
 }
 
 .pagination li a:hover {
-    background: #ed536c;
+    background: #ed536d;
     color: #ffffff;
 }
 
@@ -3642,6 +3646,10 @@ p.date {
     padding: 10px 0 10px 10px;
 }
 
+.thumb_4 .col-1 p {
+    font-weight: 500;
+}
+
 .thumb_4 a {
     color: #333333;
     -webkit-transition-property: color;
@@ -3680,7 +3688,7 @@ p.date {
 }
 
 .profile h4 {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 15px;
 }
 
@@ -4088,7 +4096,7 @@ p .ruble {
 }
 
 .balance_wrapp h3 {
-
+    font-weight: 600;
 }
 
 .two-cols-templ_3 {
@@ -4290,14 +4298,20 @@ p .ruble {
     font-size: 12px;
     line-height: 16px;
     font-weight: normal;
+    font-weight: 600;
     color: #707070;
+}
+
+.balance_footer p a {
+    font-weight: 600;
 }
 
 .balance_footer p a.p-link {
     font-family: "Roboto Slab", "Arial", "Verdana", sans-serif;
     font-size: 12px;
     line-height: 16px;
-    font-weight: normal;
+    /*font-weight: normal;*/
+    font-weight: 600;
     color: #707070;
 }
 
@@ -4315,6 +4329,7 @@ p .ruble {
 
 .white_inner h3 {
     padding: 0 0 9px 0;
+    font-weight: 600;
 }
 
 .white_inner p {
