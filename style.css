@@ -588,11 +588,11 @@ textarea:focus {
 
 .green-pill.active,
 .green-pill:active {
-    background-color: #76b87c;
+    background-color: #6de678;
 }
 
 .green-pill:hover {
-    background-color: #76b87c;
+    background-color: #6de678;
 }
 
 .red-pill {
@@ -1163,6 +1163,11 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     padding: 0 5px;
+    font-family: "Roboto Condensed", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #fec60a;
 }
 
 .tels_wrapp a {
@@ -1792,6 +1797,22 @@ textarea:focus {
 
 .two-cols_templ .right {
     width: 56%;
+    padding: 4px 0 0 1%;
+}
+
+.card_wrapp_inner {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_wrapp_inner .left {
+    width: 43%;
+    padding: 0 0 0 5%;
+}
+
+.card_wrapp_inner .right {
+    width: 57%;
     padding: 4px 0 0 1%;
 }
 
@@ -3795,6 +3816,7 @@ p i.checked {
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
+    border: none;
     background-color: #86d28d;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
@@ -3829,11 +3851,11 @@ p i.checked {
 
 .green-pill_3.active,
 .green-pill_3:active {
-    background-color: #76b87c;
+    background-color: #6de678;
 }
 
 .green-pill_3:hover {
-    background-color: #76b87c;
+    background-color: #6de678;
 }
 
 .scroll_box_2 {
