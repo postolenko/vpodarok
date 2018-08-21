@@ -819,36 +819,34 @@ textarea:focus {
 .light-pill {
     display: inline-block;
     vertical-align: top;
-    min-width: 90px;
+    min-width: 38px;
     cursor: pointer;
-    padding: 14px 15px 14px 15px;
+    padding: 4px 8px 4px 8px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
     border: none;
-    background-color: #dae5e9;
+    background: -webkit-linear-gradient(top, #efeeee 0%,#bcb9b8 100%);
+    border-top: solid 2px #fafafa;
+    border-bottom: solid 2px #ada39d;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
-    font-size: 17px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 15px;
     font-weight: 500;
     color: #333333;
     -webkit-transition-property: all;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
-
     -moz-transition-property: all;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
-
     -ms-transition-property: all;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
-
     -o-transition-property: all;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
-
     transition-property: all;
     transition-duration: .3s;
     transition-timing-function: ease;
@@ -856,16 +854,20 @@ textarea:focus {
 
 .light-pill:link,
 .light-pill:visited {
-    background-color: #dae5e9;
+    box-shadow: none;
 }
 
 .light-pill.active,
 .light-pill:active {
-    background-color: #e5f1f5;
+    position: relative;
+    top: 1px;
+    box-shadow: none;
 }
 
 .light-pill:hover {
-    background-color: #e5f1f5;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(239,238,238,.4);
+    -moz-box-shadow: 0 1px 4px 0 rgba(239,238,238,.4);
+    box-shadow: 0 1px 4px 0 rgba(239,238,238,.4);
 }
 
 /*-- Pills --*/
@@ -3564,7 +3566,7 @@ p.date {
 
 .profile > .right {
     width: calc(100% - 165px);
-    padding: 10px 0 10px 10px;
+    padding: 4px 0 10px 10px;
 }
 
 .profile_img {
@@ -3630,7 +3632,7 @@ p.date {
     margin: 0 0 19px 0;
 }
 
-.title_wrapp h3 {
+.profile .title_wrapp h3 {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 24px;
     line-height: 24px;
@@ -3639,7 +3641,7 @@ p.date {
 
 .title_wrapp .grey-link {
     position: relative;
-    top: -8px;
+    top: -6px;
 }
 
 .profile h3 {
@@ -3712,12 +3714,22 @@ p.date {
     color: #55bde4;
 }
 
+.nowrapp {
+    white-space: nowrap;
+}
+
+.nowrapp .light-pill {
+    margin: 8px 0 0 5px;
+}
+
 .profile h4 {
     font-size: 13px;
     line-height: 15px;
 }
 
 .inpt_wrapp_2 {
+    display: inline-block;
+    vertical-align: top;
     border: 1px solid #6f6f6f;
     width: 141px;
     margin: 10px 0;
@@ -3780,6 +3792,7 @@ p i.checked {
 /*-- Section 1 - Cards --*/
 
 .cards_wrapp {
+    padding-bottom: 1px;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
@@ -3864,6 +3877,8 @@ p i.checked {
 
 .scroll_box_2 {
     height: 267px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f3f3f3;
 }
 
 .card_table {
@@ -3907,6 +3922,7 @@ p i.checked {
     display: table-cell;
     vertical-align: middle;
     padding: 20px 5px 18px 5px;
+    /*padding: 18px 5px;*/
 }
 
 .card_table .table-row .cell-1 {
