@@ -1600,7 +1600,7 @@ textarea:focus {
 }
 
 .main-nav li:nth-child(7) a:after {
-    background: #e2939a;
+    background: #ed536d;
 }
 
 .main-nav li:nth-child(8) a:after {
@@ -1612,7 +1612,7 @@ textarea:focus {
 }
 
 .main-nav li a.pink_link {
-    color: #e2939a;
+    color: #ed536d;
 }
 
 /*-------------------------------------------*/
