@@ -9,9 +9,15 @@ var indexActiveTab;
 var tabsParent;
 var attrForTabLink;
 var activeTabRadio;
+var activeTabLink;
+
+var titleVal;
 
 var parentWrapp;
 var dropdownBlock;
+
+var fullHeight;
+var hideHeight;
 
 $(window).load(function() {
 
@@ -138,8 +144,18 @@ $(document).ready(function() {
 
         });
 
-        $(this).find(".tab-link").eq(indexActiveTab).click();
-        $(this).find(".tab-link").eq(indexActiveTab).addClass("active");
+        activeTabLink = $(this).find(".tab-link").eq(indexActiveTab);
+
+        activeTabLink.click();
+        activeTabLink.addClass("active");
+
+        if( $(this).hasClass("cabinet_tabs") ) {
+
+            titleVal = activeTabLink.attr("data-title");
+
+            $(".cabinet_title").text(titleVal);
+
+        }
 
     });
 
@@ -167,6 +183,14 @@ $(document).ready(function() {
             });
 
             $(this).addClass("active");
+
+            if( tabsParent.hasClass("cabinet_tabs") ) {
+
+                titleVal = $(this).attr("data-title");
+
+                $(".cabinet_title").text(titleVal);
+
+            }
 
         }
 
@@ -297,20 +321,10 @@ $(document).ready(function() {
 
     // ----------------------
 
-    var fullHeight;
-    var hideHeight;
-
     $(".scroll-box").each(function() {
-
-        fullHeight = parseInt( $(this).attr("data-fullheight") );
         hideHeight = parseInt( $(this).attr("data-hideheight") );
-
-        console.log($(this).height() +"   "+ fullHeight);
-
-        if( $(this).height() < fullHeight ) {
-             $(this).closest(".scroll-box_wrapp").find(".show_more").addClass("hide");
-        }
-
+        $(this).height(hideHeight);
+        $(this).closest(".scroll-box_wrapp").find(".show_more").addClass("hide");
     });
 
     $(".show_more").click(function(e) {
@@ -335,6 +349,67 @@ $(document).ready(function() {
 
             $(this).addClass("hide");
 
+        }
+
+    });
+
+    // ----------------------
+
+    $(".dropdown_input").each(function() {
+
+        $(this).find(".dropdown_list").css({
+            "display" : "none"
+        });
+
+    });
+
+    // -----------------------
+
+    $(".show_popup").click(function(e) {
+
+        e.preventDefault();
+
+        popupName = $(this).attr("data-popup-name");
+        popupBlock = $("[data-popup = '"+ popupName +"']");
+
+        popupBlock.fadeIn(400);
+
+    });
+
+     $(this).keydown(function(eventObject){
+
+        if (eventObject.which == 27) {
+
+            if ( $(".popup_wrapp").is(":visible") ) {
+
+                $(".popup_wrapp").fadeOut(300);
+
+            }
+
+        }
+
+    });
+
+    $(".close-popup, .close_review").click(function(e) {
+        
+        e.preventDefault();
+
+        popupBlock = $(this).closest(".popup_wrapp");
+
+        popupBlock.fadeOut(300);
+
+    });
+
+
+    $(document).mouseup(function (e){
+
+        hide_element = $('.popup');
+
+        if (!hide_element.is(e.target)
+
+            && hide_element.has(e.target).length === 0) {
+
+            hide_element.closest(".popup_wrapp").fadeOut(300);
         }
 
     });

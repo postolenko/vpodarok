@@ -135,21 +135,21 @@
 
 						<div class="row">
 								
-							<h2>Мой профиль</h2>
+							<h2 class="cabinet_title">Мой профиль</h2>
 
 							<div class="fade-block">
 								<button type="button" class="close_btn"></button>
 								<p>Это Ваш личный кабинет. Здесь Вы можете редактировать Ваши данные и управлять Вашими действиями в магазине</p>
 							</div>
 
-							<div class="two-cols-templ_2 clearfix tabs tabs_2">
+							<div class="two-cols-templ_2 clearfix tabs tabs_2 cabinet_tabs">
 								<div class="left">
 									<ul class="nav_bar">
-										<li><label class="tab-link active" for="tab_1">Мой профиль</label></li>
-										<li><label class="tab-link" for="tab_2">Мои универсальные карты</label></li>
-										<li><label class="tab-link" for="tab_3">Баланс</label></li>
-										<li><label class="tab-link" for="tab_4">Активация карт</label></li>
-										<li><label class="tab-link" for="tab_5">Вопрос-ответ</label></li>
+										<li><label class="tab-link" for="tab_1" data-title = "Мой профиль">Мой профиль</label></li>
+										<li><label class="tab-link active" for="tab_2" data-title = "Мои универсальные карты">Мои универсальные карты</label></li>
+										<li><label class="tab-link" for="tab_3" data-title = "Баланс">Баланс</label></li>
+										<li><label class="tab-link" for="tab_4" data-title = "Активация карт">Активация карт</label></li>
+										<li><label class="tab-link" for="tab_5" data-title = "Вопрос-ответ">Вопрос-ответ</label></li>
 									</ul>
 								</div>
 								<div class="right">
@@ -190,6 +190,7 @@
 															</div>
 														</div>
 													</div>
+													<button type="button" class="light-pill">Ok</button>
 												</div>
 											</div>
 										</div>
@@ -436,12 +437,12 @@
 															</div>
 															<div class="right">
 																<h3>2. Введите сумму</h3>
-																<p class="pink-p">Баланс карты: 0 руб.</p>
+																<p class="pink-p">Баланс карты: <span class="sb">0 руб.</span></p>
 																<div class="two-cols_4">
 																	<div class="col-1">
 																		<div class="sumpay">
 																			<p>Сумма к пополнению</p>
-																			<input class="sumpay_input" type="number" placeholder="0" >
+																			<input class="sumpay_input" type="number" placeholder="1000.0" >
 																		</div>
 																	</div>
 																	<div class="col-2">
