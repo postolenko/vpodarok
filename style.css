@@ -554,7 +554,7 @@ textarea:focus {
     border-radius: 3px;
     text-align: center;
     border: none;
-    background-color: #86d28d;
+    background-color: #3ac422;
     font-family: "Roboto Slab", "Arial", "Verdana", sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -588,15 +588,15 @@ textarea:focus {
 
 .green-pill.active,
 .green-pill:active {
-    -webkit-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
-    -moz-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
-    box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    -webkit-box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
+    box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
 }
 
 .green-pill:hover {
-    -webkit-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
-    -moz-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
-    box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    -webkit-box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
+    box-shadow: 0 3px 7px 0 rgba(58,196,34,.35);
 }
 
 .red-pill {
