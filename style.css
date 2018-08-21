@@ -583,16 +583,20 @@ textarea:focus {
 
 .green-pill:link,
 .green-pill:visited {
-    background-color: #86d28d;
+    box-shadow: none;
 }
 
 .green-pill.active,
 .green-pill:active {
-    background-color: #6de678;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
 }
 
 .green-pill:hover {
-    background-color: #6de678;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
+    box-shadow: 0 3px 7px 0 rgba(134,210,141,.35);
 }
 
 .red-pill {
