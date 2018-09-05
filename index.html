@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -20,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/nouislider.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 
 </head>
@@ -193,11 +195,15 @@
 								<h2>Что это</h2>
 							</div>
 
-							<div class="p_wrapp">
-								<p><b>Универсальная подарочная карта Vpodarok.ru</b> - единое подарочное решение!<br />Это ваша возможность приобрести сотни тысяч товаров и услуг, не выходя из дома, онлайн!</p>
-								<p>В каталоге интернет магазина Vpodarok.ru представлены товары самых популярных категорий: бытовая техника и электроника, парфюмерия и косметика, ювелирные украшения, товары для дома и сада, подарки-приключения и многое другое!</p>
-								<p>Чтобы получить выбранный в Каталоге подарок, нужно обменять карту на электронный сертификат желаемой торговой сети.</p>
-								<p>Счастливыми обладателями Универсальной подарочной карты Vpodarok.ru стали уже более 500.000 клиентов за 11 лет. Присоединяйся!</p>
+							<div class="p_wrapp clearfix">								
+								<div class="left">
+									<p><b>Универсальная подарочная карта Vpodarok.ru</b> - единое подарочное решение!<br />Это ваша возможность приобрести сотни тысяч товаров и услуг, не выходя из дома, онлайн!</p>
+									<p>В каталоге интернет магазина Vpodarok.ru представлены товары самых популярных категорий: бытовая техника и электроника, парфюмерия и косметика, ювелирные украшения, товары для дома и сада, подарки-приключения и многое другое!</p>
+								</div>
+								<div class="right">
+									<p>Чтобы получить выбранный в Каталоге подарок, нужно обменять карту на электронный сертификат желаемой торговой сети.</p>
+									<p>Счастливыми обладателями Универсальной подарочной карты Vpodarok.ru стали уже более 500.000 клиентов за 11 лет. Присоединяйся!</p>
+								</div>
 							</div>
 
 						</div>
@@ -329,12 +335,23 @@
 										<div class="two-cols_templ_2 clearfix">
 											<h3>Выбрать номинал и тип карты:</h3>
 											<div class="left">
-												<div class="select_wrapp">
-													<select>
-														<option>1000</option>
-														<option>5000</option>
-														<option>Введите свой</option>
-													</select>
+												<div class="dropdown_wrapp">
+													<div class="dropdown-title">
+														<input type="number" placeholder="1000" readonly="true" />
+													</div>
+													<div class="dropdown-list">
+														<p>1000</p>
+														<p>5000</p>
+														<p class="show_enternum">Введите свой</p>
+													</div>
+												</div>
+												<div class="denomination_wrapp">
+													<input type="text" placeholder="" id="denomination_value"/>
+													<div id="denomination"></div>
+												</div>
+												<div class="info_box">
+													<p>От 500 руб.</p>
+													<p>Шаг 100 руб.</p>
 												</div>
 											</div>
 											<div class="right">
@@ -345,11 +362,7 @@
 												<div class="radio">
 													<input type="radio" name="radio_1" alt="" id="radio_2" />
 													<label for="radio_2">Электронная<br /> <span class="italic">(сертификат на емейл)</span></label>
-												</div>
-												<div class="info_box">
-													<p>От 500 руб.</p>
-													<p>Шаг 100 руб.</p>
-												</div>
+												</div>												
 											</div>
 										</div>
 										<div class="two-cols_templ_2 clearfix">
@@ -466,12 +479,18 @@
 								<div class="tabs_sect">
 						 			<div class="tabs">
 	                                    <div class="tabs-links offset-ziro">
-	                                        <label class="tab-link active" for="tab_1">Отзывы (10)</label>
+	                                    	<label class="tab-link active" for="tab_0">Описание</label>
+	                                        <label class="tab-link" for="tab_1">Отзывы (10)</label>
 	                                        <label class="tab-link" for="tab_2">Правила использования</label>
 	                                        <label class="tab-link" for="tab_3">Доставка и пункты выдачи</label>
 	                                        <label class="tab-link" for="tab_4">Стать партнером</label>
 	                                    </div>
 	                                    <div class="tabs-content">
+
+	                                    	<input type="radio" name="tabs" class="radio-tab" id="tab_0">
+	                                        <div class="tab">
+	                                            
+	                                        </div>
 
 	                                        <input type="radio" name="tabs" class="radio-tab" id="tab_1">
 	                                        <div class="tab">

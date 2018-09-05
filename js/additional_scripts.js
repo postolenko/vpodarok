@@ -102,5 +102,52 @@ $(document).ready(function() {
 
     });
 
+    if( $("#denomination").length > 0 ) {
+
+        var denominationSlider = document.getElementById('denomination');
+
+        noUiSlider.create(denominationSlider, {
+            connect: [true, false],
+            // behaviour: 'tap',
+            start: 500,
+            range: {
+                'min': [ 0 ],
+                'max': [ 100000 ]
+            }
+        });
+
+        var node = $("#denomination_value");
+
+        denominationSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+            node.attr("type" , "text");
+            node.val(parseInt(values[handle]) + ' руб');
+        });
+
+        node.click(function(e) {
+            e.preventDefault();
+            $(this).val(parseInt($(this).val()));
+            $(this).attr("type" , "number");
+        });
+
+        $(document).mouseup(function (e){
+
+            node = $("#denomination_value");
+
+            if (!node.is(e.target)
+                && node.has(e.target).length === 0) {
+
+                node.attr("type" , "text");
+                node.val(node.val() + ' руб');
+                var range = parseInt( node.val() );
+                denominationSlider.noUiSlider.set([range, null]);
+
+            }
+
+        });
+
+    }
+
+    
+
 });
 

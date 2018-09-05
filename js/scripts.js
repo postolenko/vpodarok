@@ -18,6 +18,7 @@ var dropdownBlock;
 
 var fullHeight;
 var hideHeight;
+var actualHeight;
 
 $(window).load(function() {
 
@@ -330,19 +331,32 @@ $(document).ready(function() {
         e.preventDefault();
 
         var scrollBox = $(this).closest(".scroll-box_wrapp").find(".scroll-box");
+        hideHeight = parseInt( scrollBox.attr("data-hideheight") );
+        fullHeight = parseInt( scrollBox.attr("data-fullheight") );
+        actualHeight = scrollBox.find(".mCSB_container").height() + $(this).closest(".scroll-box_wrapp").find(".scroll-box_footer").outerHeight();
 
         if( $(this).hasClass("hide") ) {
 
-            scrollBox.animate({
-                "height" : 350 + "px"
-            }, 400);
+            if( actualHeight < fullHeight ) {
+
+                scrollBox.animate({
+                    "height" : actualHeight + "px"
+                }, 400);
+
+            } else {
+
+                scrollBox.animate({
+                    "height" : fullHeight + "px"
+                }, 400);
+
+            }            
 
             $(this).removeClass("hide");
 
         } else {
 
             scrollBox.animate({
-                "height" : 200 + "px"
+                "height" : hideHeight + "px"
             }, 400);
 
             $(this).addClass("hide");
@@ -409,6 +423,82 @@ $(document).ready(function() {
 
             hide_element.closest(".popup_wrapp").fadeOut(300);
         }
+
+    });
+
+    // ----------------
+
+    $(".dropdown_wrapp .dropdown-list").each(function() {
+
+        $(this).css({
+            "display" : "none"
+        })
+
+    });
+
+    $(".dropdown-title").click(function(e) {
+
+        e.preventDefault();
+
+        parentBlock = $(this).closest(".dropdown_wrapp");
+
+        var dropdownList = parentBlock.find(".dropdown-list");
+
+        if( dropdownList.is(":hidden") ) {
+
+            dropdownList.slideDown(300);
+            parentBlock.addClass("active");
+
+        } else {
+
+            dropdownList.slideUp(300);
+            parentBlock.removeClass("active");
+
+        }
+
+    });
+
+    $(document).mouseup(function (e){
+
+        hide_element = $('.dropdown-list');
+
+        if (!hide_element.is(e.target)
+
+            && hide_element.has(e.target).length === 0) {
+
+            parentBlock = hide_element.closest(".dropdown_wrapp");
+            hide_element.slideUp(300);
+            parentBlock.removeClass("active");
+        }
+
+    });
+
+    $(".dropdown_wrapp .dropdown-list p").click(function(e) {
+
+        e.preventDefault();
+
+        if( !$(this).hasClass("show_enternum") ) {
+            parentBlock = $(this).closest(".dropdown_wrapp");
+            var dropdownInput = $(this).closest(".dropdown_wrapp").find(".dropdown-title input");
+            var numVal = $(this).text();
+            dropdownInput.val(numVal);
+            parentBlock.find(".dropdown-list").css({
+                "display" : "none"
+            });
+            parentBlock.removeClass("active");
+
+
+        } else {
+
+            $(this).closest(".dropdown_wrapp").css({
+                "display" : "none"
+            });
+
+            $(".denomination_wrapp").addClass("active");
+
+        }
+
+        
 
     });
 
