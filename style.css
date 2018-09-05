@@ -146,6 +146,7 @@ body {
 
 .wrapper {
     width: 100%;
+    min-width: 100%;
     position: relative;
     min-height: 100vh;
     display: -webkit-box;
@@ -162,11 +163,15 @@ body {
 }
 
 header {
+    width: 100%;
+    min-width: 100%;
     order: 1;
     -webkit-order: 1;
 }
 
 .content {
+    width: 100%;
+    min-width: 100%;
     order: 2;
     -webkit-order: 2;
     flex-grow: 1;
@@ -174,6 +179,8 @@ header {
 }
 
 footer {
+    width: 100%;
+    min-width: 100%;
     order: 3;
     -webkit-order: 3;
     position: relative;
