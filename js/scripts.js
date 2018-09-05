@@ -238,8 +238,6 @@ $(document).ready(function() {
 
         cardNumInput = $(this).closest(".dropdown_input").find(".input_type");
 
-        console.log(cardNum);
-
         cardNumInput.val(cardNum);
 
     });
