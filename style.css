@@ -1689,12 +1689,12 @@ body.load {
 
 .p_wrapp .left {
     width: 50%;
-    padding: 0 3% 0 0;
+    padding: 0 7% 0 2%;
 }
 
 .p_wrapp .right {
     width: 50%;
-    padding: 0 0 0 3%;
+    padding: 0 2% 0 7%;
 }
 
 .p_wrapp p {
@@ -2629,7 +2629,8 @@ body.load {
     opacity: 1;
 }
 
-.tab .inner {
+.tab-inner {
+    min-height: 473px;
     padding: 20px 50px;
     border: 1px solid #b9e0e0;
     -webkit-border-radius: 6px;
