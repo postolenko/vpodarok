@@ -3031,9 +3031,15 @@ p.date {
     color: #ae0626;
 }
 
+.inline-header p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .inline-header a {
     font-size: 16px;
     line-height: 16px;
+    font-weight: 300;
 }
 
 .two-cols-templ {
