@@ -254,7 +254,7 @@ textarea {
     -moz-appearance;
 }
 
-/*input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
 input::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
 input:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
 input:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
@@ -270,7 +270,7 @@ textarea:-ms-input-placeholder            {opacity: 1; transition: opacity .3s e
 textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
 textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
 textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
-textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}*/
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
 
 input {
     display: block;
@@ -385,6 +385,11 @@ a:hover,
 a:active {
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
+}
+
+body.load {
+    width: 100%;
+    position: fixed;
 }
 
 /*-------------------------------------------*/
@@ -1679,17 +1684,17 @@ a:active {
 
 .p_wrapp {
     margin: 10px 0 38px 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .p_wrapp .left {
     width: 50%;
-    padding: 0 1% 0 0;
+    padding: 0 3% 0 0;
 }
 
 .p_wrapp .right {
     width: 50%;
-    padding: 0 0 0 1%;
+    padding: 0 0 0 3%;
 }
 
 .p_wrapp p {
@@ -2073,6 +2078,7 @@ a:active {
 
 .dropdown-title input::placeholder {
     color: #4a4d50;
+    opacity: 1 !important
 }
 
 .dropdown-title:after {
@@ -2572,6 +2578,7 @@ a:active {
 }
 
 .tabs-content {
+    min-height: 503px;
     position: relative;
 }
 
@@ -2620,6 +2627,14 @@ a:active {
     overflow: none;
     position: relative;
     opacity: 1;
+}
+
+.tab .inner {
+    padding: 20px 50px;
+    border: 1px solid #b9e0e0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .reviews_sect {

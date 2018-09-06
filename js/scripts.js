@@ -32,6 +32,12 @@ $(window).load(function() {
 
     });
 
+    setTimeout(function() {
+
+        $("body").removeClass("load");
+
+    }, 700);
+
 });
 
 $(window).resize(function() {
@@ -42,6 +48,8 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
+
+    $("body").addClass("load");
    
 	getNavLinkHeight();
 	getHLinesParams();
