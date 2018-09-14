@@ -147,6 +147,45 @@ $(document).ready(function() {
 
     }
 
+    $(".big_slider_2").not(".slick-initialized").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 1200,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: ".miniature_slider_2"
+    });
+
+    $(".miniature_slider_2").not(".slick-initialized").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        vertical: true,
+        autoplaySpeed: 10000,
+        speed: 1200,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        centerMode: false,
+        verticalSwiping: true,
+        asNavFor: ".big_slider_2"
+    });
+
+    $(".categories-goods-slider").not(".slick-initialized").slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 1200,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: $(".categories-goods-slider_nav .prev_btn"),
+        nextArrow: $(".categories-goods-slider_nav .next_btn")
+    });
+
     
 
 });

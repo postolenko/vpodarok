@@ -5,3 +5,4 @@
 # http://postolenko.github.io/vpodarok/universal_cards.html
 # http://postolenko.github.io/vpodarok/balance.html
 # http://postolenko.github.io/vpodarok/catalog_2.html
+# http://postolenko.github.io/vpodarok/physical_goods_card.html
