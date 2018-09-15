@@ -6,3 +6,4 @@
 # http://postolenko.github.io/vpodarok/balance.html
 # http://postolenko.github.io/vpodarok/catalog_2.html
 # http://postolenko.github.io/vpodarok/physical_goods_card.html
+# http://postolenko.github.io/vpodarok/сard_prizes_certificate.html

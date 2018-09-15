@@ -396,7 +396,7 @@ $(document).ready(function() {
 
     });
 
-     $(this).keydown(function(eventObject){
+    $(this).keydown(function(eventObject){
 
         if (eventObject.which == 27) {
 
@@ -504,9 +504,74 @@ $(document).ready(function() {
 
             $(".denomination_wrapp").addClass("active");
 
+        }        
+
+    });
+
+    // -----------------
+
+    $(".dropdown_2_list").each(function() {
+
+        $(this).css({
+            "display" : "none"
+        });
+
+    });
+
+
+    $(".dropdown_wrapp_price").click(function(e) {
+
+        parentBlock = $(this).closest(".dropdown_wrapp_2");
+
+        dropdownBlock = parentBlock.find(".dropdown_2_list");
+
+        if( dropdownBlock.is(":visible") ) {
+
+            dropdownBlock.slideUp(300);
+
+        } else {
+
+            dropdownBlock.slideDown(300);
+
         }
 
-        
+    });
+
+    $(document).mouseup(function (e){
+
+        hide_element = $('.dropdown_2_list');
+
+        if (!hide_element.is(e.target)
+
+            && hide_element.has(e.target).length === 0) {
+
+            hide_element.slideUp(300);
+        }
+
+    });
+
+    $(this).keydown(function(eventObject){
+
+        if (eventObject.which == 27) {
+
+            $('.dropdown_2_list').slideUp(300);
+
+        }
+
+    });
+
+
+    $(".dropdown_2_list p").click(function(e) {
+
+        e.preventDefault();
+
+        parentBlock = $(this).closest(".dropdown_wrapp_2");
+
+        var priceValBox = parentBlock.find(".price_val");
+
+        priceVal = $(this).text();
+
+        priceValBox.text(priceVal);
 
     });
 
