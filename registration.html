@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.min.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -21,7 +21,7 @@
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
-	<script type="text/javascript" src="vendors/js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 </head>
 
@@ -166,10 +166,8 @@
 												</div>
 												<div class="left">
 													<div class="datepicker_wrapp">
-														<div class="col">
-															<input type="text" id="date_input" class="form-control" placeholder="День рождения">
-														</div>
-														<div class="col">
+														<input type="text" data-toggle="datepicker" placeholder="День рождения">
+														<div class="icon-box">
 															<i class="datepicker"></i>
 														</div>
 													</div>

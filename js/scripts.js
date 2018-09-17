@@ -219,7 +219,7 @@ $(document).ready(function() {
 
     $("input.input_type").mask("999 999 999 999");
 
-    $("input[type='date']").mask("99-99-9999");
+    // $("input[type='date']").mask("99-99-9999");
 
     // -------------------------
 

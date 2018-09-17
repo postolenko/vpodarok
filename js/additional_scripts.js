@@ -186,10 +186,13 @@ $(document).ready(function() {
         nextArrow: $(".categories-goods-slider_nav .next_btn")
     });
 
-    $('#date_input').datepicker({
-        todayBtn: true
-    });
-    
+    $('[data-toggle="datepicker"]').datepicker();
+
+    // $(".datepicker_wrapp").click(function(e) {
+
+    //     $(this).find("input").trigger("click");
+
+    // });
 
 });
 
