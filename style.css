@@ -6128,13 +6128,17 @@ p .ruble {
     display: block;
     width: 100%;
     height: 42px;
-    padding: 0 8px;
+    padding: 0 22px;
     background: transparent;
     border: 1px solid transparent;
     box-shadow: none;
     font-size: 14px;
     line-height: 43px;
     color: #4b5c74;
+}
+
+.input_wrapp_3_2 input {
+    padding: 0 10px;
 }
 
 .tel-input_wrapp {
@@ -6230,6 +6234,88 @@ p .ruble {
 
 /*-- Section 1 - Replenishment of electronic money --*/
 
+.thumbnails_7 {
+    margin: 6 -6px;
+}
+
+.thumb_7 {
+    display: inline-block;
+    width: auto;
+    margin: 6px;
+    text-align: center;
+}
+
+.thumb_7 .icon-box {
+    display: inline-block;
+    position: relative;
+}
+
+.thumb_7.checked {
+    position: relative;
+}
+
+.thumb_7.checked .icon-box:after {
+    content: "";
+    width: 22px;
+    height: 21px;
+    background-image: url(img/checked_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 39px;
+    left: 41px;
+}
+
+.thumb_7 .icon-box .inner {
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .35);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .35);
+}
+
+.yandex-money {
+    display: block;
+    width: 45px;
+    height: 48px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.qiwi {
+    display: block;
+    width: 40px;
+    height: 50px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -57px -1px;
+}
+
+.webmoney {
+    display: block;
+    width: 52px;
+    height: 50px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -107px -1px;
+}
+
+.thumb_7 .icon-box i {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 /*-- /Section 1 - Replenishment of electronic money --*/
 
