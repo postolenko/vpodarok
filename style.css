@@ -613,6 +613,33 @@ body.load {
     background-size: contain;
 }
 
+.yandex-money {
+    display: block;
+    width: 45px;
+    height: 48px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.qiwi {
+    display: block;
+    width: 40px;
+    height: 50px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -57px -1px;
+}
+
+.webmoney {
+    display: block;
+    width: 52px;
+    height: 50px;
+    background-image: url(img/payments_sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: -107px -1px;
+}
+
 /*-- /Icons --*/
 
 /*-- Pills --*/
@@ -6234,6 +6261,16 @@ p .ruble {
 
 /*-- Section 1 - Replenishment of electronic money --*/
 
+.good_content_2 {
+    box-shadow: none;
+    background: none;
+}
+
+h2.h2_2 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
 .thumbnails_7 {
     margin: 6 -6px;
 }
@@ -6243,18 +6280,28 @@ p .ruble {
     width: auto;
     margin: 6px;
     text-align: center;
+    position: relative;
+}
+
+.thumb_7 input {
+    display: block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
 }
 
 .thumb_7 .icon-box {
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
-.thumb_7.checked {
-    position: relative;
-}
-
-.thumb_7.checked .icon-box:after {
+.thumb_7 .icon-box:after {
+    display: none;
     content: "";
     width: 22px;
     height: 21px;
@@ -6267,7 +6314,12 @@ p .ruble {
     left: 41px;
 }
 
+.thumb_7 input:checked + .icon-box:after {
+    display: block;
+}
+
 .thumb_7 .icon-box .inner {
+    display: block;
     width: 58px;
     height: 58px;
     overflow: hidden;
@@ -6281,33 +6333,6 @@ p .ruble {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .35);
 }
 
-.yandex-money {
-    display: block;
-    width: 45px;
-    height: 48px;
-    background-image: url(img/payments_sprite.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-.qiwi {
-    display: block;
-    width: 40px;
-    height: 50px;
-    background-image: url(img/payments_sprite.jpg);
-    background-repeat: no-repeat;
-    background-position: -57px -1px;
-}
-
-.webmoney {
-    display: block;
-    width: 52px;
-    height: 50px;
-    background-image: url(img/payments_sprite.jpg);
-    background-repeat: no-repeat;
-    background-position: -107px -1px;
-}
-
 .thumb_7 .icon-box i {
     margin: auto;
     position: absolute;
@@ -6318,6 +6343,66 @@ p .ruble {
 }
 
 /*-- /Section 1 - Replenishment of electronic money --*/
+
+/*-- Section 1 - Registration --*/
+
+.registration_wrapp {
+    max-width: 836px;
+    margin: 0 auto;
+    padding: 16px 25px;
+    background-color: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+}
+
+.registration_wrapp h2 {
+    text-transform: none;
+    font-family: "Roboto Slab", "Arial", "Verdana", sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: bold;
+    color: #2d3b4b;
+}
+
+.form-3_wrapp {
+    border-width: 1px;
+    border-color: rgb(209, 219, 233);
+    border-style: solid;
+}
+
+.three-cols_templ {
+
+}
+
+.three-cols_templ .left {
+    width: 33.33%;
+    padding: 10px 11px;
+}
+
+.input_wrapp_3_2 {
+
+}
+
+.input_wrapp_3_2 input {
+
+}
+
+.datepicker {
+    display: block;
+    width: 25px;
+    height: 26px;
+    background-image: url(img/datepicker.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*-- /Section 1 - Registration --*/
 
 /*-- Popups --*/
 
