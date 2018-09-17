@@ -5706,15 +5706,21 @@ p .ruble {
 }
 
 .thumb_6 .descript {
-    min-height: 57px;
-    margin: 8px 0 0 0;
-    padding: 3px 5px 5px 5px;
+    height: 51px;
+    overflow: hidden;
+    position: relative;
+    margin: 8px 0 9px 0;
+    padding: 5px 5px 5px 5px;
 }
 
 .thumb_6 .descript:before {
     content: "";
     display: block;
     height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #dedede;
 }
 
@@ -6220,8 +6226,12 @@ p .ruble {
     width: 140px;
 }
 
-
 /*-- /Section 1 - Card Prizes Certificate --*/
+
+/*-- Section 1 - Replenishment of electronic money --*/
+
+
+/*-- /Section 1 - Replenishment of electronic money --*/
 
 /*-- Popups --*/
 
