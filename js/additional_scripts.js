@@ -180,7 +180,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 10000,
         speed: 1200,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: $(".categories-goods-slider_nav .prev_btn"),
         nextArrow: $(".categories-goods-slider_nav .next_btn")

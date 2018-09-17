@@ -1172,8 +1172,8 @@ body.load {
 .bradcrumbs li:after {
     margin: 0 0 0 4px;
     content: "\2f";
-    font-size: 8px;
-    line-height: 11px;
+    font-size: 11px;
+    line-height: 13px;
     color: #757575;
 }
 
@@ -1182,8 +1182,8 @@ body.load {
 }
 
 .bradcrumbs li a {
-    font-size: 10px;
-    line-height: 11px;
+    font-size: 13px;
+    line-height: 13px;
     color: #757575;
 }
 
@@ -5670,8 +5670,8 @@ p .ruble {
 
 .thumb_title h4 {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 13px;
+    line-height: 14px;
     color: #69a06f;
 }
 
@@ -5726,8 +5726,8 @@ p .ruble {
 
 .thumb_6 .descript p {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
-    font-size: 9px;
-    line-height: 14.5px;
+    font-size: 13px;
+    line-height: 15px;
     color: #515151;
 }
 
