@@ -219,6 +219,8 @@ $(document).ready(function() {
 
     $("input.input_type").mask("999 999 999 999");
 
+    $("input[type='date']").mask("99-99-9999");
+
     // -------------------------
 
     $(".table-row .checkbox input").click(function() {
@@ -519,7 +521,7 @@ $(document).ready(function() {
     });
 
 
-    $(".dropdown_wrapp_price").click(function(e) {
+    $(".dropdown_wrapp-box").click(function(e) {
 
         parentBlock = $(this).closest(".dropdown_wrapp_2");
 
@@ -567,11 +569,19 @@ $(document).ready(function() {
 
         parentBlock = $(this).closest(".dropdown_wrapp_2");
 
-        var priceValBox = parentBlock.find(".price_val");
+        var priceValBox = parentBlock.find(".insert_val");
 
-        priceVal = $(this).text();
+        insertVal = $(this).text();
 
-        priceValBox.text(priceVal);
+        if(priceValBox.prop("tagName") == "INPUT") {
+
+            priceValBox.val(insertVal);
+
+        } else {
+
+            priceValBox.text(insertVal);
+
+        }
 
     });
 

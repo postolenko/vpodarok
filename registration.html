@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/bootstrap-datepicker.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -20,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/bootstrap-datepicker.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 </head>
 
@@ -144,30 +146,112 @@
 
 								<div class="form-3_wrapp">
 									<form>
-										<div class="three-cols_templ clearfix">
-											<div class="left">
-												<div class="input_wrapp_3 input_wrapp_3_2">
-													<input type="text" placeholder="Фамилия">
+										<div class="inner">
+											<h3>Базовые данные</h3>
+											<div class="three-cols_templ inputs_wrapp clearfix">
+												<div class="left">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="text" placeholder="Фамилия">
+													</div>
+												</div>
+												<div class="left">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="text" placeholder="Имя">
+													</div>
+												</div>
+												<div class="left">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="text" placeholder="Отчество">
+													</div>
+												</div>
+												<div class="left">
+													<div class="datepicker_wrapp">
+														<div class="col">
+															<input type="text" id="date_input" class="form-control" placeholder="День рождения">
+														</div>
+														<div class="col">
+															<i class="datepicker"></i>
+														</div>
+													</div>
+												</div>
+												<div class="left">
+													<div class="dropdown_wrapp_2">
+														<div class="dropdown_wrapp-box dropdown_wrapp-box_2">
+															<div class="col">
+																<input type="text" class="insert_val" placeholder="Пол" />
+															</div>
+															<div class="col">
+																<i class="arrow_down_2"></i>
+															</div>
+														</div>
+														<div class="dropdown_2_list">
+															<p>мужской</p>
+															<p>женский</p>
+														</div>
+													</div>
 												</div>
 											</div>
-											<div class="left">
-												<div class="input_wrapp_3 input_wrapp_3_2">
-													<input type="text" placeholder="Имя">
+										</div>
+										<div class="inner">
+											<h3>Контакты</h3>
+											<div class="three-cols_templ inputs_wrapp clearfix">
+												<div class="left">
+													<div class="dropdown_wrapp_2">
+														<div class="dropdown_wrapp-box dropdown_wrapp-box_2">
+															<div class="col">
+																<input type="text" class="insert_val" placeholder="Город" />
+															</div>
+															<div class="col">
+																<i class="arrow_down_2"></i>
+															</div>
+														</div>
+														<div class="dropdown_2_list">
+															<p>Москва</p>
+															<p>Ленинград</p>
+															<p>Санкт-Петербург</p>
+														</div>
+													</div>
+												</div>
+												<div class="left left_2">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="text" placeholder="Адрес">
+													</div>
+												</div>
+												<div class="left">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="tel" placeholder="Телефон">
+													</div>
+												</div>
+												<div class="left">
+													<div class="input_wrapp_3 input_wrapp_3_3">
+														<input type="email" placeholder="Email">
+													</div>
 												</div>
 											</div>
-											<div class="left">
-												<div class="input_wrapp_3 input_wrapp_3_2">
-													<input type="text" placeholder="Отчество">
+										</div>
+										<div class="inner">
+											<div class="form-footer">
+												<div class="checkbox_3">
+													<input type="checkbox" id="ch_12" />
+													<label for="ch_12">Согласен на получение рассылки</label>
 												</div>
-											</div>
-											<div class="left">
-												<div class="input_wrapp_3 input_wrapp_3_2">
-													<input type="text" placeholder="Фамилия">
+												<div class="checkbox_3">
+													<input type="checkbox" id="ch_13" />
+													<label for="ch_13">Согласен с офертой</label>
 												</div>
-											</div>
-											<div class="left">
-												<div class="input_wrapp_3 input_wrapp_3_2">
-													<input type="text" placeholder="Имя">
+												<div class="checkbox_3">
+													<input type="checkbox" id="ch_14" />
+													<label for="ch_14">Согласен обработку персональных данных</label>
+												</div>
+												<div class="overflow_hidden">
+													<div class="btn_wrapp_2">
+														<div>
+															<p>12.10.2015</p>
+														</div>
+														<div>
+															<button type="submit" class="green-pill_4">Зарегистрироваться</button>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>

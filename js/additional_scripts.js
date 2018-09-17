@@ -185,6 +185,10 @@ $(document).ready(function() {
         prevArrow: $(".categories-goods-slider_nav .prev_btn"),
         nextArrow: $(".categories-goods-slider_nav .next_btn")
     });
+
+    $('#date_input').datepicker({
+        todayBtn: true
+    });
     
 
 });
