@@ -585,6 +585,50 @@ $(document).ready(function() {
 
     });
 
+    // -----------------
+
+    $(".nominal input").click(function(e) {
+
+        e.preventDefault();
+
+        $(this).closest(".nominal").addClass("active");
+
+        parentBlock = $(this).closest(".nominals_wrapp");
+
+        var nominalRadio = parentBlock.find(".radio_2 input");
+
+        nominalRadio.each(function() {
+
+            if( $(this).prop("checked") == true ) {
+
+                $(this).prop("checked", false);
+
+            }
+
+        });
+
+    });
+
+    $(document).mouseup(function (e){
+
+        hide_element = $('.nominal');
+
+        if (!hide_element.is(e.target)
+
+            && hide_element.has(e.target).length === 0) {
+
+            hide_element.removeClass("active");
+        }
+
+    });
+
+    $(".nominals_wrapp .radio_2 input").click(function() {
+
+        $(this).closest(".nominals_wrapp ").find(".nominal input").val("");
+
+    });
+
+
 });
 
 function getNavLinkHeight() {
