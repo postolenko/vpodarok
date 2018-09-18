@@ -186,13 +186,9 @@ $(document).ready(function() {
         nextArrow: $(".categories-goods-slider_nav .next_btn")
     });
 
-    $('[data-toggle="datepicker"]').datepicker();
-
-    // $(".datepicker_wrapp").click(function(e) {
-
-    //     $(this).find("input").trigger("click");
-
-    // });
+    $('[data-toggle="datepicker"]').datepicker({
+        language: 'ru-RU'
+    });
 
 });
 
