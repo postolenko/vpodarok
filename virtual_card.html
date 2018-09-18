@@ -3,7 +3,6 @@
 <html lang="ru">
 
 <head>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.min.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -20,6 +20,8 @@
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.ru-RU.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 </head>
 
@@ -29,7 +31,7 @@
 
 	<!-- Header -->
 		
-	<header>
+	<header class="header-site_2">
 		<div class="header-row-1">
 			<div class="row offset-ziro">
 				<div class="col col-1">
@@ -115,6 +117,27 @@
 				</ul>
 			</div>
 		</div>
+		<section class="sect-1_2">
+			<div class="row">
+				<div class="article_2 clearfix">
+					<div class="left">
+						<img src="img/virtu_card.png" alt="" />
+					</div>
+					<div class="right">
+						<h2>Эволюция финансовой надежности</h2>
+						<p>Виртуальная карта – современный способ безопасной
+						оплаты в интернете</p>
+						<a href="#" class="green-pill_4">Оформить онлайн</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="row">
+			<ul class="bradcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Оформление виртуальной банковской карты</a></li>
+			</ul>
+		</div>
 	</header>
 
 	<!-- /Header -->
@@ -122,20 +145,13 @@
 		<!-- Content -->
 			<div class="content">
 
-				<div class="bg_shape"></div>
-
-				<div class="row">
-					<ul class="bradcrumbs">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Оформление виртуальной банковской карты</a></li>
-					</ul>
-				</div>
+				<div class="bg_shape"></div>					
 
 				<div class="contetn_inner">
 
 					<div class="row">
 
-						<!-- Section 1 - Replenishment of electronic money -->
+						<!-- Section 2 - Virtual Card -->
 
 						<section>
 
@@ -284,7 +300,81 @@
 									<div class="good_content">
 										<h2>Оформить виртуальную банковскую карту и отправить деньги на нее</h2>
 										
-										
+										<ul class="list_2">
+											<li>В данном разделе вы можете оформить виртуальную подарочную карту платежной системы Mastercard</li>
+											<li>Реквизиты карты прийдут на номер мобильного телефона и e-mail, указаные при оформлении карты.</li>
+											<li>Виртуальной картой можно оплатить любые покупки в сети Интернет, где принимаются к оплате банковские карты данной платежной системы.</li>
+											<li>Виртуальная карты выпускается официальным партнером АО «Банк Русский Стандарт» и является абсолютно безопасной в использованиии. Для получения карты, пожалуйста, ознакомьтесь с условиями ниже и заполните анкету.</li>
+										</ul>
+
+										<div class="two-cols_6 clearfix">
+											<div class="left">
+												<div class="pink-box">
+													<h3>Условия использования карты</h3>
+													<ul class="list_3">
+														<li>1 Номинал карты от 500 до 15000 рублей (без учета суммы комиссии за выпуск карты).</li>
+														<li>2 Картой можно воспользоваться неограниченное количество раз в рамках оставшейся на балансе суммы.</li>
+														<li>3 Срок действия подарочной карты составляет от 3 до 4 месяцев. Он исчисляется со дня активации карты до последнего дня месяца, следующего за тремя подряд календарными месяцами со дня активации.</li>
+													</ul>
+												</div>
+											</div>
+											<div class="right">
+												<div class="form_wrapp_3">
+													<form>
+														<div class="inner">
+															<div class="form-row">
+																<div class="input_wrapp_3">
+																	<input type="text" placeholder="Имя Фамилия получателя">
+																</div>
+															</div>
+															<div class="form-row">
+																<div class="three-inputs_wrapp offset-ziro">
+																	<div class="col">
+																		<div class="nominal">
+																			<div class="nominal-input_wrapp">
+																				<div class="col-1">
+																					<input type="number" placeholder="Номинал">
+																				</div>
+																				<div class="col-2">
+																					<p>руб</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col">
+																		<div class="radio_2">
+																			<input type="radio" name="nom_radio" id="nom_01" />
+																			<label for="nom_01">1000</label>
+																		</div>
+																	</div>
+																	<div class="col">
+																		<div class="radio_2">
+																			<input type="radio" name="nom_radio" id="nom_02" />
+																			<label for="nom_02">5000</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="inner">
+															<div class="form-row">
+																<div class="input_wrapp_3">
+																	<input type="email" placeholder="Email получателя">
+																</div>
+															</div>
+															<div class="form-row">
+																<div class="input_wrapp_3">
+																	<input type="tel" placeholder="Телефон получателя">
+																</div>
+															</div>
+															<div class="btn_wrapp">
+																<button type="submit" class="green-pill_4">Получить карту</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
 
 									</div>
 								</div>
@@ -292,7 +382,7 @@
 
 						</section>
 
-						<!-- /Section 1 - Replenishment of electronic money -->
+						<!-- /Section 2 - Virtual Card -->
 
 					</div>
 

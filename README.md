@@ -11,3 +11,4 @@
 # http://postolenko.github.io/vpodarok/phone_replenishment.html
 # http://postolenko.github.io/vpodarok/кeplenishment_electronic_money.html
 # http://postolenko.github.io/vpodarok/registration.html
+# http://postolenko.github.io/vpodarok/virtual_card.html

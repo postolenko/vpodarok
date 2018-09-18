@@ -1697,6 +1697,8 @@ body.load {
     margin: 0 0 46px 0;
     padding: 1px 0 12px 0;
     text-align: center;
+    position: relative;
+    z-index: 2;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 3px 17px 0 rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 3px 17px 0 rgba(0, 0, 0, .3);
@@ -6317,6 +6319,7 @@ p .ruble {
 }
 
 .nominal-input_wrapp p {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 300;
@@ -6638,7 +6641,255 @@ p .ruble {
 
 /*-- /Section 1 - Registration --*/
 
+/*-- Header - Virtual Card  --*/
 
+.header-site_2 .main-nav_wrapp {
+    margin: 0;
+}
+
+.header-site_2 .bradcrumbs {
+    margin: 7px 0 10px 0;
+}
+
+.sect-1_2 {
+    padding: 41px 0;
+    background-image: url(img/bg_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.article_2 {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.article_2 .left {
+    width: 49%;
+    padding: 10px 2% 10px 0;
+}
+
+.article_2 .right {
+    width: 51%;
+    padding: 24px 0 10px 2%;
+}
+
+.article_2 h2 {
+    text-transform: none;
+    color: #feffff;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+.article_2 p {
+    padding: 4px 0;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.article_2 .green-pill_4 {
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 55px;
+    padding: 12px 2% 12px 2%;
+}
+
+/*-- /Header - Virtual Card  --*/
+
+/*-- Section 2 - Virtual Card  --*/
+
+.list_2 {
+    margin: 14px 0 0 0;
+}
+
+.list_2 li {
+    position: relative;    
+    padding: 4px 0 4px 14px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #3d4a5d;
+    font-weight: 300;
+}
+
+.list_2 li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    border: 1px solid #167dc5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.two-cols_6 {
+    margin: 7px 0;
+}
+
+.two-cols_6 > .left {
+    width: 55%;
+    padding: 0 10px 0 10px;
+}
+
+.two-cols_6 > .right {
+    width: 45%;
+    padding: 0 0 10px 10px;
+}
+
+.pink-box {
+    padding: 28px 3% 44px 7%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(253, 250, 234);
+}
+
+.pink-box h3 {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #2d3b3d;
+    font-weight: normal;
+}
+
+.list_3 {
+    margin: 6px 0;
+}
+
+.list_3 li {
+    padding: 6px 0;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    color: #3d4a5d;
+}
+
+.form_wrapp_3 {
+    padding: 10px 8% 15px 8%;
+    border-width: 1px;
+    border-color: rgb(233, 237, 244);
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, .02);
+    -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, .02);
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .02);
+}
+
+.form_wrapp_3 .inner {
+    border-bottom: 1px solid rgb(233, 237, 244);
+    padding: 12px 0;
+}
+
+.form_wrapp_3 .inner:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.form_wrapp_3 .form-row {
+    padding: 10px 0;
+}
+
+.three-inputs_wrapp {
+    margin: 0 -5px;
+}
+
+.three-inputs_wrapp .col {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+}
+
+.three-inputs_wrapp .col:nth-child(1) {
+    max-width: 169px;
+}
+
+.form_wrapp_3 .nominal {
+    height: 56px;
+    padding: 20px 0 5px 0;
+}
+
+.nominal-input_wrapp .col-2 {
+    width: 48px;
+}
+
+.form_wrapp_3 .input_wrapp_3 {
+    height: 56px;
+}
+
+.form_wrapp_3 .input_wrapp_3 input {
+    height: 56px;
+    font-size: 15px;
+    line-height: 55px;
+    color: #3d4a5d;
+}
+
+.form_wrapp_3 .nominal-input_wrapp input {
+    font-size: 15px;
+    color: #3d4a5d;
+}
+
+.radio_2 {
+    position: relative;
+}
+
+.radio_2 input {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.radio_2 label {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 56px;
+    min-width: 58px;
+    cursor: pointer;
+    padding: 20px 1% 5px 1%;
+    border-width: 1px;
+    border-color: rgba(168, 173, 182, .5);
+    border-style: solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3d4a5d;
+}
+
+.radio_2 input:checked + label {
+    border: 1px solid rgb(129, 214, 137);
+    background-color: rgb(129, 214, 137);
+    color: #ffffff;
+}
+
+.form_wrapp_3 .green-pill_4 {
+    min-width: 160px;
+    padding: 16px 2% 16px 2%;
+    font-size: 17px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form_wrapp_3 .btn_wrapp {
+    padding: 13px 0;
+}
+
+/*-- /Section 2 - Virtual Card  --*/
 
 /*-- Popups --*/
 
