@@ -628,6 +628,18 @@ $(document).ready(function() {
 
     });
 
+    // ----------------------------
+
+    $(".del-btn").click(function(e) {
+
+        e.preventDefault();
+
+        parentBlock = $(this).closest(".card_box");
+
+        parentBlock.remove();
+
+    });
+
 
 });
 
