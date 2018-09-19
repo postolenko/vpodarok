@@ -7263,21 +7263,18 @@ p .ruble {
 .card-box_content .p-1 {
     font-size: 18px;
     line-height: 20px;
-    /*font-weight: 300;*/
     color: #3d4a5d;
 }
 
 .card-box_content .p-red {
     font-size: 14px;
     line-height: 16px;
-    /*font-weight: 300;*/
     color: #d22d4b;
 }
 
 .card-box_content .p-2 {
     font-size: 14px;
     line-height: 16px;
-    /*font-weight: 300;*/
     color: #3d4a5d;
 }
 
@@ -7286,10 +7283,12 @@ p .ruble {
     margin: 6px 0;
 }
 
-h3.shape_h {
-    /*display: table;*/
-    width: 100%;
-    margin: 27px 0;
+.h2_wrapp_2 {
+    margin: 19px 0 22px 0;
+}
+
+.h2_wrapp_2 h2 {
+    padding: 0 6px;
     text-align: center;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
@@ -7298,20 +7297,9 @@ h3.shape_h {
     color: #363636;
 }
 
-/*.shape_h:before,
-.shape_h:after {
-    display: table-cell;
-    vertical-align: middle;
-    content: "";
-    width: auto;
+.h2_wrapp_2 .line {
     background-color: #d1d1d1;
-}*/
-
-/*.shape_h span {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 6px;
-}*/
+}
 
 .blue-link_2 i {
     display: inline-block;
