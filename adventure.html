@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+
 </head>
 
 <body>
@@ -118,7 +119,7 @@
 		<div class="row">
 			<ul class="bradcrumbs">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Приключения</a></li>
+				<li><a href="#">Сертификаты на приключения</a></li>
 			</ul>
 		</div>
 	</header>
@@ -134,9 +135,29 @@
 
 					<div class="row">
 
-						<!-- Section 1 - Physical goods card -->
+						<!-- Section 1 - Catalog Page -->
 
 						<section>
+							
+							<div class="catalog-header">
+								<h4>Выбрать сертификат из каталога:</h4>
+								<h2>Сертификаты на приключения <span class="small">(найдено 365)</span></h2>
+							</div>
+
+							<div class="inline-header">
+								<div class="col">
+									<p>Сортировать:</p>
+								</div>
+								<div class="col">
+									<div class="select_wrapp select_wrapp_2">
+										<select data-placeholder="Не выбрано">
+											<option>Любые</option>
+											<option>С доплатой</option>
+											<option>Без доплаты</option>
+										</select>
+									</div>
+								</div>
+							</div>
 
 							<div class="two-cols-templ clearfix">
 								<div class="left">
@@ -144,11 +165,11 @@
 										<div class="inner">
 											<h3>Раздел каталога:</h3>
 											<div class="radio">
-												<input type="radio" id="r_1" name="catalog_radio_1" />
+												<input type="radio" id="r_1" name="catalog_radio_1"/>
 												<label for="r_1">Сертификаты магазинов</label>
 											</div>
 											<div class="radio">
-												<input type="radio" id="r_2" name="catalog_radio_1" checked/>
+												<input type="radio" id="r_2" name="catalog_radio_1" checked />
 												<label for="r_2">Сертификаты на приключения</label>
 											</div>
 											<div class="radio">
@@ -169,24 +190,44 @@
 											</div>
 										</div>
 										<div class="inner">
-											<h3>Тип подарка:</h3>
+											<h3>Категории:</h3>
 											<div class="scroll-box_wrapp">
 												<div class="scroll-box" data-fullheight = "350" data-hideheight = "100">
 													<div class="radio">
-														<input type="radio" id="r_7" name="catalog_rd_2"/>
-														<label for="r_7">Любой</label>
+														<input type="radio" id="r_11" name="catalog_rd_2"/>
+														<label for="r_11">Мастер-класс 94</label>
 													</div>
 													<div class="radio">
-														<input type="radio" id="r_8" name="catalog_rd_2" checked/>
-														<label for="r_8">Товары</label>
+														<input type="radio" id="r_12" name="catalog_rd_2" checked/>
+														<label for="r_12">Spa & Красота 102</label>
 													</div>
 													<div class="radio">
-														<input type="radio" id="r_9" name="catalog_rd_2"/>
-														<label for="r_9">Услуги</label>
+														<input type="radio" id="r_13" name="catalog_rd_2"/>
+														<label for="r_13">Полетать 31</label>
 													</div>
 													<div class="radio">
-														<input type="radio" id="r_10" name="catalog_rd_2"/>
-														<label for="r_10">Еда, развлечения, отдых</label>
+														<input type="radio" id="r_14" name="catalog_rd_2"/>
+														<label for="r_14">Погонять 46</label>
+													</div>
+													<div class="radio">
+														<input type="radio" id="r_15" name="catalog_rd_2"/>
+														<label for="r_15">Спокойный отдых 84</label>
+													</div>
+													<div class="radio">
+														<input type="radio" id="r_16" name="catalog_rd_2" checked/>
+														<label for="r_16">Активный отдых 137</label>
+													</div>
+													<div class="radio">
+														<input type="radio" id="r_17" name="catalog_rd_2"/>
+														<label for="r_17">Романтика 57</label>
+													</div>
+													<div class="radio">
+														<input type="radio" id="r_18" name="catalog_rd_2"/>
+														<label for="r_18">Экскурсии 38</label>
+													</div>
+													<div class="radio">
+														<input type="radio" id="r_19" name="catalog_rd_2"/>
+														<label for="r_19">Квесты 21</label>
 													</div>
 												</div>
 												<div class="scroll-box_footer">
@@ -196,101 +237,28 @@
 													</a>
 												</div>
 											</div>
-										</div>
-										<div class="inner">
-											<h3>Бренд:</h3>
-											<div class="search_wrapp_2">
-												<form>
-													<button type="submit" class="search_btn_2"></button>
-													<input type="text" name="" />
-												</form>
-											</div>
-
-											<div class="scroll-box_wrapp">
-
-												<div class="scroll-box" data-fullheight = "350" data-hideheight = "200">
-													<div class="radio">
-														<input type="radio" id="r_11" name="catalog_rd_3" checked/>
-														<label for="r_11">Любой</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_12" name="catalog_rd_3"/>
-														<label for="r_12">Азбука вкуса</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_13" name="catalog_rd_3"/>
-														<label for="r_13">Библиосфера</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_14" name="catalog_rd_3"/>
-														<label for="r_14">Выпиши.ру</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_15" name="catalog_rd_3"/>
-														<label for="r_15">Глобус Гурмэ</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_16" name="catalog_rd_3"/>
-														<label for="r_16">Детский мир</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_17" name="catalog_rd_3"/>
-														<label for="r_17">Дочки-сыночки</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_18" name="catalog_rd_3"/>
-														<label for="r_18">Евросеть</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_19" name="catalog_rd_3"/>
-														<label for="r_19">ЕвроСПАР</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_20" name="catalog_rd_3"/>
-														<label for="r_20">Ёлки-палки</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_21" name="catalog_rd_3"/>
-														<label for="r_21">Кораблик</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_22" name="catalog_rd_3"/>
-														<label for="r_22">Опция 1</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_23" name="catalog_rd_3"/>
-														<label for="r_23">Опция 2</label>
-													</div>
-													<div class="radio">
-														<input type="radio" id="r_24" name="catalog_rd_3"/>
-														<label for="r_24">Опция 3</label>
-													</div>
-												</div>
-
-												<div class="scroll-box_footer">
-													<a href="#" class="show_more dashed_link">
-														<span class="up">Показать меньше</span>
-														<span class="down">Показать больше</span>
-													</a>
-												</div>
-
-											</div>
-
 										</div>
 									</div>
 								</div>
 								<div class="right">
-									<div class="good_content">
-
-										<h2>Карточки приключений</h2>									
-
+									
+									<div class="pagination_wrapp">
+										<ul class="pagination">
+											<li><a href="#"><i class="pag_left_arrow"></i></a></li>
+											<li><a href="#" class="active">1</a></li>
+											<li><a href="#">2</a></li>
+											<li class="offset">...</li>
+											<li><a href="#">9</a></li>
+											<li><a href="#">10</a></li>
+											<li><a href="#"><i class="pag_right_arrow"></i></a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
 
 						</section>
 
-						<!-- /Section 1 - Physical goods card -->
+						<!-- /Section 1 - Catalog Page -->
 
 					</div>
 
