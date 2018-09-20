@@ -219,7 +219,7 @@ $(document).ready(function() {
 
     $("input.input_type").mask("999 999 999 999");
 
-    // $("input[type='date']").mask("99-99-9999");
+    $(".time_input").mask("99 :: 99");
 
     // -------------------------
 
@@ -637,6 +637,108 @@ $(document).ready(function() {
         parentBlock = $(this).closest(".card_box");
 
         parentBlock.remove();
+
+    });
+
+    // ------------------------------
+
+    $(".dropdown_list_3").each(function() {
+
+        $(this).css({
+            "display" : "none"
+        });
+
+    });
+
+    $(".dropdown_wrapp_3 input").click(function(e) {
+
+        parentBlock = $(this).closest(".dropdown_wrapp_3");
+
+        dropdownBlock = parentBlock.find(".dropdown_list_3");
+
+        if( dropdownBlock.is(":visible") ) {
+
+            dropdownBlock.css({
+                "display" : "none"
+            });
+
+        } else {
+
+            dropdownBlock.css({
+                "display" : "block"
+            });
+
+        }
+
+    });
+
+    $(".dropdown_list_3 li").click(function(e) {
+
+        e.preventDefault();
+
+        if( $(this).hasClass("insert_time") ) {
+
+            $(this).closest(".dropdown_wrapp_3").css({
+                "display" : "none"
+            });
+
+            parentBlock = $(this).closest(".time_wrapp");
+
+            parentBlock.find(".time_input_wrapp").css({
+                "display" : "block"
+            });
+
+        } else {
+
+            dropdownBlock = $(this).closest(".dropdown_list_3");
+
+            if( dropdownBlock.is(":visible") ) {
+
+                parentBlock = $(this).closest(".dropdown_wrapp_3");
+                var dropdownInput = parentBlock.find(".insert_input");
+                var numVal = $(this).text();
+                dropdownInput.val(numVal);
+
+                dropdownBlock.css({
+                    "display" : "none"
+                });
+
+            } else {
+
+                dropdownBlock.css({
+                    "display" : "block"
+                });
+
+            }
+
+        }
+
+    });
+
+    $(document).mouseup(function (e){
+
+        hide_element = $('.dropdown_list_3');
+
+        if (!hide_element.is(e.target)
+
+            && hide_element.has(e.target).length === 0) {
+
+            hide_element.css({
+                "display" : "none"
+            });
+        }
+
+    });
+
+    $(this).keydown(function(eventObject){
+
+        if (eventObject.which == 27) {
+
+            $('.dropdown_list_3').css({
+                "display" : "none"
+            });
+
+        }
 
     });
 
