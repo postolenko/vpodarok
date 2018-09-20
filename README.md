@@ -14,3 +14,4 @@
 # http://postolenko.github.io/vpodarok/virtual_card.html
 # http://postolenko.github.io/vpodarok/cart_2.html
 # http://postolenko.github.io/vpodarok/delivery.html
+# http://postolenko.github.io/vpodarok/adventure.html
