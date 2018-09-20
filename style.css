@@ -1123,9 +1123,9 @@ body.load {
     padding: 8px;
     text-align: center;
     border: none;
-    background: #f1c85e;
-    border-top: solid 2px #f1c85e;
-    border-bottom: solid 2px #f1c85e;
+    background: #ffcb52;
+    border-top: solid 2px #ffcb52;
+    border-bottom: solid 2px #ffcb52;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 15px;
@@ -7194,7 +7194,7 @@ p .ruble {
     padding: 0;
     background-color: transparent;
     background-image: url(img/del.png);
-    background-size: contain;
+    /*background-size: contain;*/
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid #f19999;
