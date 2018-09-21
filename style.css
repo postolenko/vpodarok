@@ -7374,10 +7374,6 @@ p .ruble {
     color: #333333;
 }
 
-.radios_wrapp {
-
-}
-
 .radio_wrapp {
     padding: 6px 10px;
     float: left;
@@ -7394,7 +7390,6 @@ p .ruble {
 .radio_wrapp_3 {
     width: 100%;
     max-width: 390px;
-    /*margin: 0 auto;*/
     margin: 26px auto 20px auto;
     float: none;
     text-align: center;
@@ -7987,12 +7982,20 @@ h3 .red {
     box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
 }
 
-
-
 /*-- /Section 1 - Delivery --*/
 
+/*-- Section 1 - Adventure Page --*/
 
+.thumbnails_6 {
+    margin: 0 -1%;
+}
 
+.thumbnails_6 .thumb_6 {
+    width: 23%;
+    margin: 15px 1%;
+}
+
+/*-- /Section 1 - Adventure Page --*/
 
 
 
