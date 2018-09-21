@@ -742,6 +742,20 @@ $(document).ready(function() {
 
     });
 
+    // ------------------------
+
+    $("[data-choose] input[type='radio'").click(function() {
+
+        parentBlock = $(this).closest("[data-choose]");
+
+        var chooseBoxName = parentBlock.attr("data-choose");
+
+        var chooseVariant = $(this).attr("data-choosetet");
+
+        $("[data-chooseinput = '"+ chooseBoxName +"']").attr("placeholder", chooseVariant);
+
+    });
+
 
 });
 

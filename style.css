@@ -7319,7 +7319,7 @@ p .ruble {
 
 .delivery_wrapp {
     margin: 10px 0;
-    padding: 41px 0;
+    padding: 41px 0 24px 0;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
@@ -7424,6 +7424,7 @@ p .ruble {
     position: relative;
     font-size: 14px;
     line-height: 17px;
+    color: #000000;
 }
 
 .radio_3 label:before {
@@ -7795,8 +7796,198 @@ h3 .red {
 }
 
 .delivery_4 {
-
+    max-width: 440px;
+    margin: 4px auto;
+    text-align: center;
 }
+
+.delivery_4 h3.h-red {
+    padding: 5px 0;
+    text-align: center;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.delivery_4 p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #575959;
+}
+
+.radios_wrapp_2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.radios_wrapp_2 .radio_wrapp {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 8px;
+    float: none;
+    width: auto !important;
+}
+
+.radios_wrapp_2 .radio_3 label {
+    white-space: nowrap;
+}
+
+.pink {
+    color: #e91a5e;
+}
+
+.radios_wrapp_2 .radio_3 .pink {
+    font-style: italic;
+}
+
+.input_wrapp_4_2 {
+    height: 32px;
+}
+
+.input_wrapp_4_2 input {
+    height: 30px;
+    line-height: 31px;
+    font-style: italic;
+}
+
+.delivery_footer {
+    padding: 52px 0 0 0;
+}
+
+.delivery_title h3.red {
+    color: #ff0000;
+}
+
+.delivery-item_2 .col:nth-child(2) {
+    padding-top: 16px;
+}
+
+.delivery_5 {
+    max-width: 355px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delivery_5 h3 {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.delivery_5 .p-desc {
+    padding: 11px 0;
+    text-align: center;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #858484;
+}
+
+.total-price_box {
+    margin: 7px 0;
+    padding: 11px 9% 18px 9%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgb(227, 254, 217);
+}
+
+.total-price_row {
+    display: table;
+    width: 100%;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.total-price_row .col-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+}
+
+.total-price_row .col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: 105px;
+}
+
+.total-price_row p {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.total-price_row:last-child p {
+    font-family: "Roboto Slab", "Arial", "Verdana", sans-serif;
+    font-weight: bold;
+}
+
+.total-price_row p.pink {
+    color: #e51958;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.pink_pill {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 228px;
+    margin: 16px 0;
+    padding: 13px 2%;
+    cursor: pointer;
+    border: 1px solid #e82c54;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #e82c54;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pink_pill:link,
+.pink_pill:visited {
+    box-shadow: none;
+}
+
+.pink_pill.active,
+.pink_pill:active {
+    -webkit-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+    box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+}
+
+.pink_pill:hover {
+    -webkit-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+    -moz-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+    box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+}
+
+
 
 /*-- /Section 1 - Delivery --*/
 
