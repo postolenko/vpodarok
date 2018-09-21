@@ -7381,14 +7381,6 @@ p .ruble {
     float: left;
 }
 
-/*.radio_wrapp:nth-child(odd) {
-    width: 41%;
-}
-
-.radio_wrapp:nth-child(even) {
-    width: 59%;
-}*/
-
 .radio_wrapp_3 {
     width: 100%;
     max-width: 390px;
@@ -7851,7 +7843,7 @@ h3 .red {
 }
 
 .delivery_footer {
-    padding: 52px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .delivery_title h3.red {
