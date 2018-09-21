@@ -219,7 +219,7 @@ $(document).ready(function() {
 
     $("input.input_type").mask("999 999 999 999");
 
-    $(".time_input").mask("99 :: 99");
+    $(".time_input").mask("99 : 99");
 
     // -------------------------
 
