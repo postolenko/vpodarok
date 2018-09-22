@@ -8166,14 +8166,14 @@ h3 .red {
     display: table-cell;
     vertical-align: top;
     width: auto;
-    padding: 0 5px 0 0;
+    padding: 0 25px 0 0;
 }
 
 .form_3 .col:nth-child(2) {
     display: table-cell;
     vertical-align: top;
     width: 175px;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 25px;
     text-align: right;
 }
 
