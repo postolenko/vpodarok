@@ -412,7 +412,7 @@ $(document).ready(function() {
 
     });
 
-    $(".close-popup, .close_review").click(function(e) {
+    $(".close-popup, .close_review, .cansel_btn").click(function(e) {
         
         e.preventDefault();
 
