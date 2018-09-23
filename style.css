@@ -8095,20 +8095,26 @@ h3 .red {
 /*-- /Section 1 - Adventure Page --*/
 
 
-
-
-
-
-
 /*-- Popups --*/
 
-.popup_wrapp {
-    display: none;
+.wrapper.popupshow {
     width: 100%;
-    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.popup_wrapp {
+    /*display: none;*/
+    display: block;
+    width: 100%;
+    padding: 1px 0;
+    /*height: 100vh;*/
+    /*position: fixed;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    position: relative;
     background: rgba(255, 255, 255, .9);
     z-index: 15;
 }
@@ -9099,15 +9105,13 @@ p .angle {
 /*-- Autorization --*/
 
 .autorization {
+    display: none;
     width: 100%;
     max-width: 284px;
-    padding: 16px 1% 18px 1%;
+/*    padding: 16px 1% 18px 1%;*/
     text-align: center;
     position: fixed;
-    top: 400px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 2;
+    z-index: 3;
     border-style: solid;
     border-width: 1px;
     -webkit-border-radius: 3px;
@@ -9145,7 +9149,11 @@ p .angle {
     margin: 0 0 0 -6px;
 }
 
-.autorization div {
+.autorization .inner_1 {
+    padding: 16px 1% 18px 1%;
+}
+
+.autorization .inner_1 div {
     text-align: center;
 }
 
@@ -9157,11 +9165,11 @@ p .angle {
     padding: 2px 2% 3px 2%;
     cursor: pointer;
     text-align: center;
-    border: 1px solid #ed536d;
+    border: 1px solid #ff5a76;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background-color: #ed536d;
+    background-color: #ff5a76;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 14px;
@@ -9201,27 +9209,28 @@ p .angle {
     box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
 }
 
-.autorization_2 {
+.autorization .inner_2 {
+    display: none;
     padding: 4px 1% 10px 1%;
 }
 
-.autorization h4 {
+.autorization .inner_2 h4 {
     padding: 0 0 5px 0;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    font-weight: normal;
+    font-weight: 500;
     color: #c75269;
 }
 
-.autorization p {
+.autorization .inner_2 p {
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
     font-size: 12px;
     line-height: 16px;
     color: #333333;
 }
 
-.autorization p a {
+.autorization .inner_2 p a {
     font-size: 12px;
 }
 
