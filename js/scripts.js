@@ -489,9 +489,20 @@ $(document).ready(function() {
 
         if( !$(this).hasClass("show_enternum") ) {
             parentBlock = $(this).closest(".dropdown_wrapp");
-            var dropdownInput = $(this).closest(".dropdown_wrapp").find(".dropdown-title input");
-            var numVal = $(this).text();
-            dropdownInput.val(numVal);
+            if( $(this).closest(".dropdown_wrapp").find(".dropdown-title input").length > 0 ) {
+
+                var dropdownInput = $(this).closest(".dropdown_wrapp").find(".dropdown-title input");
+                var numVal = $(this).text();
+                dropdownInput.val(numVal);
+
+            } else if( $(this).closest(".dropdown_wrapp").find(".dropdown-title p").length > 0 ) {
+
+                var dropdownInput = $(this).closest(".dropdown_wrapp").find(".dropdown-title p");
+                var numVal = $(this).html();
+                dropdownInput.html(numVal);
+
+            }
+            
             parentBlock.find(".dropdown-list").css({
                 "display" : "none"
             });
