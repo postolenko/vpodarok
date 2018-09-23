@@ -1271,6 +1271,48 @@ body.load {
     border-bottom: 1px solid transparent;
 }
 
+.green-link {
+    display: inline;
+    border-bottom: 1px solid #b2d179;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    color: #b2d179;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.green-link:link,
+.green-link:visited {
+    border-bottom: 1px solid #b2d179;
+}
+
+.green-link.active,
+.green-link:active {
+    border-bottom: 1px solid transparent;
+}
+
+.green-link:hover {
+    border-bottom: 1px solid transparent;
+}
+
 .blue-link_2 {
     display: inline;
     border-bottom: 1px solid transparent;
@@ -9060,6 +9102,7 @@ p .angle {
     width: 100%;
     max-width: 284px;
     padding: 16px 1% 18px 1%;
+    text-align: center;
     position: fixed;
     top: 300px;
     left: 50%;
@@ -9067,6 +9110,9 @@ p .angle {
     z-index: 2;
     border-style: solid;
     border-width: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     border-color: rgb(221, 223, 225);
     background-color: rgb(247, 246, 243);
 }
@@ -9153,6 +9199,30 @@ p .angle {
     -webkit-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
     -moz-box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
     box-shadow: 0 3px 7px 0 rgba(242,44,84,.35);
+}
+
+.autorization_2 {
+    padding: 4px 1% 10px 1%;
+}
+
+.autorization h4 {
+    padding: 0 0 5px 0;
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #c75269;
+}
+
+.autorization p {
+    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.autorization p a {
+    font-size: 12px;
 }
 
 /*-- /Autorization --*/
