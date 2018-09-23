@@ -9104,7 +9104,7 @@ p .angle {
     padding: 16px 1% 18px 1%;
     text-align: center;
     position: fixed;
-    top: 300px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 2;
