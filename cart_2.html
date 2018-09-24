@@ -31,8 +31,8 @@
 
 	<!-- Header -->
 		
-	<header>
-		<div class="header-row-1">
+	<header class="header_wrapp">
+		<div class="header-row-1 header_site">
 			<div class="row offset-ziro">
 				<div class="col col-1">
 					<ul class="top_nav">
@@ -50,13 +50,42 @@
 							<li>8 (800) 555-16-12</li>
 						</ul>
 					</div>
-					<p>Пн-Пт:  09:00 - 20:00,  Сб-Вс: 10:00 - 18:00</p>
+					<p><b>Прием звонков</b> круглосуточно 24/7</p>
+					<p><b>Магазин открыт:</b> Пн-Пт: 09:00 - 19:00, Сб-Вс Выходные</p>
 				</div>
 				<div class="col col-3">
-					<ul class="sign_wrapp">
-						<li><a href=""><i class="activation"></i>Активация</a></li>
-						<li><a href="">Выйти<i class="sign-out"></i></a></li>
-					</ul>
+					<div class="sign_wrapp_box">
+						<ul class="sign_wrapp">
+							<li>
+								<a href="" data-modalname = "modal_1"><i class="activation"></i>Активация</a>							
+							</li>
+							<!-- <li><a href="">Выйти<i class="sign-out"></i></a></li> -->
+							<li>
+								<a href="" class="enter_link" data-modalname = "modal_2">Войти<i class="sign-out"></i></a>							
+							</li>
+						</ul>
+						<div class="autorization" data-modal = "modal_1" >
+							<div class="inner_1">
+								<div>
+									<a href="#" class="pink_pill_2">Активация подарка</a>
+								</div>
+								<div>
+									<a href="#" class="pink_pill_2 show_content">Активация универсальной карты</a>
+								</div>
+							</div>
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="#" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="#" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+						<div class="autorization autorization_2" data-modal = "modal_2" >
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="#" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="#" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+					</div>
+					
 					<div class="card-link_wrapp">
 						<a class="card-link" href="#"><i class="card_icon"></i><span class="red-corcle">25</span></a>
 					</div>
@@ -120,7 +149,7 @@
 		<div class="row">
 			<ul class="bradcrumbs">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Сертификаты на приключения</a></li>
 			</ul>
 		</div>
 	</header>

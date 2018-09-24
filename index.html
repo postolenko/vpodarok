@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.min.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -22,6 +23,8 @@
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="vendors/js/nouislider.min.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.ru-RU.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 
 </head>
@@ -32,39 +35,42 @@
 
 	<!-- Popup -->
 	
-	<div class="popup_wrapp scroll" data-popup ="popup_1">
-		<button type="button" class="close-popup"></button>
-		<div class="popup">			
-			<div class="review_wrapp">
-				<div class="review">
-					<div class="col-1">
-						<div class="photo-box">
-							<img src="img/testimonial.jpg" alt="" />
-						</div>
-					</div>
-					<div class="col-2">
-						<div class="review_title">
-							<div class="col-1">
-								<h3>Далида</h3>
-							</div>
-							<div class="col-2">
-								<div class="rating" id="rate_010" data-rate = "3"></div>
+	<div class="popup_wrapp" data-popup ="popup_1">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<button type="button" class="close-popup"></button>
+			<div class="popup">			
+				<div class="review_wrapp">
+					<div class="review">
+						<div class="col-1">
+							<div class="photo-box">
+								<img src="img/testimonial.jpg" alt="" />
 							</div>
 						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
-						</div>
-						<div class="review_footer">
-							<div class="col-1">
-								<p class="date">21.02.2018 г.</p>
+						<div class="col-2">
+							<div class="review_title">
+								<div class="col-1">
+									<h3>Далида</h3>
+								</div>
+								<div class="col-2">
+									<div class="rating" id="rate_010" data-rate = "3"></div>
+								</div>
 							</div>
-							<div class="col-2">
-								<a href="#" class="blue-link close_review">Скрыть отзыв</a>
+							<div class="description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+							</div>
+							<div class="review_footer">
+								<div class="col-1">
+									<p class="date">21.02.2018 г.</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="blue-link close_review">Скрыть отзыв</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -77,9 +83,8 @@
 
 	<!-- Header -->
 		
-	<header>
-
-		<div class="header-row-1">
+	<header class="header_wrapp">
+		<div class="header-row-1 header_site">
 			<div class="row offset-ziro">
 				<div class="col col-1">
 					<ul class="top_nav">
@@ -101,12 +106,40 @@
 					<p><b>Магазин открыт:</b> Пн-Пт: 09:00 - 19:00, Сб-Вс Выходные</p>
 				</div>
 				<div class="col col-3">
-					<ul class="sign_wrapp">
-						<li><a href=""><i class="activation"></i>Активация</a></li>
-						<li><a href="">Выйти<i class="sign-out"></i></a></li>
-					</ul>
+					<div class="sign_wrapp_box">
+						<ul class="sign_wrapp">
+							<li>
+								<a href="" data-modalname = "modal_1"><i class="activation"></i>Активация</a>							
+							</li>
+							<!-- <li><a href="">Выйти<i class="sign-out"></i></a></li> -->
+							<li>
+								<a href="" class="enter_link" data-modalname = "modal_2">Войти<i class="sign-out"></i></a>							
+							</li>
+						</ul>
+						<div class="autorization" data-modal = "modal_1" >
+							<div class="inner_1">
+								<div>
+									<a href="#" class="pink_pill_2">Активация подарка</a>
+								</div>
+								<div>
+									<a href="#" class="pink_pill_2 show_content">Активация универсальной карты</a>
+								</div>
+							</div>
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="#" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="#" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+						<div class="autorization autorization_2" data-modal = "modal_2" >
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="#" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="#" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+					</div>
+					
 					<div class="card-link_wrapp">
-						<a class="card-link" href="#"><i class="card_icon"></i><span class="red-corcle">25</span></a>
+						<a class="card-link" href="cart_2.html"><i class="card_icon"></i><span class="red-corcle">25</span></a>
 					</div>
 				</div>
 			</div>
@@ -165,7 +198,12 @@
 				</ul>
 			</div>
 		</div>
-								
+		<div class="row">
+			<ul class="bradcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Сертификаты на приключения</a></li>
+			</ul>
+		</div>
 	</header>
 
 	<!-- /Header -->
@@ -379,7 +417,7 @@
 												</div>
 											</div>
 											<div class="right">
-												<a href="#" class="green-pill">Купить</a>
+												<a href="cart_2.html" class="green-pill">Купить</a>
 												<div class="inline-blocks">
 													<div class="col">
 														<a href="#" class="blue-link">Купить оптом</a>
@@ -944,11 +982,11 @@
 		</footer>
 
 		<!-- /Footer -->
-
-		<script src="js/scripts.js"></script>
-		<script src="js/additional_scripts.js"></script>
 	
 	</div>
+
+	<script src="js/scripts.js"></script>
+	<script src="js/additional_scripts.js"></script>
 
 </body>
 </html>

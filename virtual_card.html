@@ -158,14 +158,14 @@
 							<div class="two-cols-templ clearfix">
 								<div class="left">
 									<div class="sidebar">
-										<div class="inner">
+										<!-- <div class="inner">
 											<h3>Раздел каталога:</h3>
 											<div class="radio">
-												<input type="radio" id="r_1" name="catalog_radio_1" />
+												<input type="radio" id="r_1" name="catalog_radio_1" checked />
 												<label for="r_1">Сертификаты магазинов</label>
 											</div>
 											<div class="radio">
-												<input type="radio" id="r_2" name="catalog_radio_1" />
+												<input type="radio" id="r_2" name="catalog_radio_1"/>
 												<label for="r_2">Сертификаты на приключения</label>
 											</div>
 											<div class="radio">
@@ -181,10 +181,76 @@
 												<label for="r_5">Пополнение кошельков</label>
 											</div>
 											<div class="radio">
-												<input type="radio" id="r_6" name="catalog_radio_1" checked/>
+												<input type="radio" id="r_6" name="catalog_radio_1"/>
 												<label for="r_6">Отправить деньги</label>
 											</div>
+										</div> -->
+
+
+										<!-- 
+											Следующую часть кода можно удалитью
+											Она была нужна для того чтобы показать клиенту как будет работать его сайт.
+											Он так попросил ))))))))))	
+											Актуальная часть фильтра закомментированная сверху, с радиокнопками. 
+										-->
+
+										<style>
+										
+											.radio a {
+											    display: inline-block;
+											    vertical-align: top;
+											    cursor: pointer;
+											    position: relative;
+											    padding: 0 0 0 29px;
+											    font-family: "Roboto", "Arial", "Verdana", sans-serif;
+											    font-size: 16px;
+											    line-height: 18px;
+											    font-weight: normal;
+											    color: #4a4d50;
+											}
+
+											.radio a:before {
+											    display: block;
+											    content: "";
+											    width: 19px;
+											    height: 19px;
+											    position: absolute;
+											    top: 0;
+											    left: 0;
+											    background-image: url(img/radio_sprite.png);
+											    background-repeat: no-repeat;
+											    background-position: -1px -31px;
+											}
+
+											.radio a.active:before {
+												background-position: -1px -2px;
+											}
+
+										</style>
+
+										<div class="inner">
+											<h3>Раздел каталога:</h3>
+											<div class="radio">
+												<a href="catalog.html">Сертификаты магазинов</a>
+											</div>
+											<div class="radio">
+												<a href="adventure.html">Сертификаты на приключения</a>
+											</div>
+											<div class="radio">
+												<a href="physical_goods_card.html">Товары</a>
+											</div>
+											<div class="radio">
+												<a href="phone_replenishment.html">Пополнение мобильной связи</a>
+											</div>
+											<div class="radio">
+												<a href="replenishment_electronic_money.html">Пополнение кошельков</a>
+											</div>
+											<div class="radio">
+												<a href="virtual_card.html" class="active">Отправить деньги</a>
+											</div>
 										</div>
+
+										<!-- ///////////////////////////////// -->
 									</div>
 								</div>
 								<div class="right">
