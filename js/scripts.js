@@ -41,6 +41,8 @@ $(window).load(function() {
 
     }, 700);
 
+    detectIE();
+
 });
 
 $(window).resize(function() {
@@ -927,5 +929,20 @@ function getHeaderTopPadding() {
     $(".header_wrapp").css({
         "padding-top" : $(".header_site").height() + "px"
     });
+
+}
+
+function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    var trident = ua.indexOf('Trident/');
+    var edge = ua.indexOf('Edge/');
+
+    if ( msie > 0 || trident > 0 || edge > 0 ) {
+        document.getElementsByTagName("html")[0].classList.add("ie");
+    }
+
+    return false;
 
 }
