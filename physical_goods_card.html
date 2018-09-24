@@ -3,16 +3,17 @@
 <html lang="ru">
 
 <head>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">	
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/nouislider.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/datepicker.min.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -20,6 +21,9 @@
 	<script type="text/javascript" src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/rating.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="vendors/js/nouislider.min.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.js"></script>
+	<script type="text/javascript" src="vendors/js/datepicker.ru-RU.js"></script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 </head>
 
@@ -29,8 +33,8 @@
 
 	<!-- Header -->
 		
-	<header>
-		<div class="header-row-1">
+	<header class="header_wrapp">
+		<div class="header-row-1 header_site">
 			<div class="row offset-ziro">
 				<div class="col col-1">
 					<ul class="top_nav">
@@ -51,12 +55,40 @@
 					<p>Пн-Пт:  09:00 - 20:00,  Сб-Вс: 10:00 - 18:00</p>
 				</div>
 				<div class="col col-3">
-					<ul class="sign_wrapp">
-						<li><a href=""><i class="activation"></i>Активация</a></li>
-						<li><a href="">Выйти<i class="sign-out"></i></a></li>
-					</ul>
+					<div class="sign_wrapp_box">
+						<ul class="sign_wrapp">
+							<li>
+								<a href="https://vpodarok.ru/activate" data-modalname = "modal_1"><i class="activation"></i>Активация</a>							
+							</li>
+							<!-- <li><a href="">Выйти<i class="sign-out"></i></a></li> -->
+							<li>
+								<a href="#" class="enter_link" data-modalname = "modal_2">Войти<i class="sign-out"></i></a>							
+							</li>
+						</ul>
+						<div class="autorization" data-modal = "modal_1" >
+							<div class="inner_1">
+								<div>
+									<a href="https://vpodarok.ru/activate" class="pink_pill_2">Активация подарка</a>
+								</div>
+								<div>
+									<a href="#" class="pink_pill_2 show_content">Активация универсальной карты</a>
+								</div>
+							</div>
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="cabinet.html" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="registration.html" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+						<div class="autorization autorization_2" data-modal = "modal_2" >
+							<div class="inner_2" data-content ="cnt_1">
+								<h4>Авторизация</h4>
+								<p>Чтобы активировать<br /> Вашу универсальную карту,<br /> пожалуйста, <a href="cabinet.html" class="green-link">войдите в свой Кабинет</a><br /> Нет аккаунта? <a href="registration.html" class="blue-link">Зарегистрируйтесь</a></p>
+							</div>
+						</div>
+					</div>
+					
 					<div class="card-link_wrapp">
-						<a class="card-link" href="#"><i class="card_icon"></i><span class="red-corcle">25</span></a>
+						<a class="card-link" href="cart_2.html"><i class="card_icon"></i><span class="red-corcle">25</span></a>
 					</div>
 				</div>
 			</div>
@@ -442,10 +474,10 @@
 																</div>
 															</div>
 															<div class="col-2">
-																<button type="button" class="card-btn">
+																<a href="cart_2.html" class="card-btn">
 																	<span class="col">Получить</span>
 																	<span class="col"><i class="card_icon_2"></i></span>
-																</button>
+																</a>
 															</div>
 														</div>
 													</div>
