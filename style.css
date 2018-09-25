@@ -2947,11 +2947,13 @@ body.load {
 
 .title_link:active,
 .title_link.active {
-    border-bottom: 1px dashed transparent;
+    /*border-bottom: 1px dashed transparent;*/
+    border-bottom: 1px dashed #55bde4;
 }
 
 .title_link:hover {
-    border-bottom: 1px dashed transparent;
+    /*border-bottom: 1px dashed transparent;*/
+    border-bottom: 1px dashed #55bde4;
 }
 
 .brands-slider_wrapp {
@@ -5026,16 +5028,6 @@ p .ruble {
 .card_1_header {
     margin-bottom: 10px;
     text-align: right;
-}
-
-.card_1_header:before {
-    display: inline-block;
-    vertical-align: top;
-    content: "";
-    width: 40%;
-    margin-top: 5px;
-    height: 27px;
-    background-color: #ffffff;
 }
 
 .card_logo_wrapp {
