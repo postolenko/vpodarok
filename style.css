@@ -680,6 +680,17 @@ body.load {
     background-size: contain;
 }
 
+.key {
+    display: inline-block;
+    vertical-align: top;
+    width: 23px;
+    height: 23px;
+    background-image: url(img/key.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 /*-- /Icons --*/
 
 /*-- Pills --*/

@@ -25,15 +25,15 @@ var popupLink;
 
 $(window).load(function() {
 
-    $("select").each(function() {
+    // $("select").each(function() {
 
-        var parentBlock = $(this).closest(".select-block");
+    //     var parentBlock = $(this).closest(".select-block");
 
-        parentBlock.find(".select2-container").css({
-            "width" : parentBlock.width() + "px"
-        });
+    //     parentBlock.find(".select2-container").css({
+    //         "width" : parentBlock.width() + "px"
+    //     });
 
-    });
+    // });
 
     setTimeout(function() {
 
@@ -49,7 +49,6 @@ $(window).resize(function() {
 
     getNavLinkHeight();
     getHLinesParams();
-    // getModalsPosition();
     getHeaderTopPadding();
 
 });
@@ -785,32 +784,17 @@ $(document).ready(function() {
 
             popupBlock.fadeIn(400);
 
-            // if(popupName == "modal_2") {
+            if(popupName == "modal_1") {
 
-            //     modalCoordleft = ( popupBlock.width() - $(this).width() ) / 2 - $(this).find("i").width();
+                $(".autorization .inner_1").css({
+                    "display" : "block"
+                });
 
-            // } else {
+                $(".autorization .inner_2").css({
+                    "display" : "none"
+                });
 
-            //     $(".autorization .inner_1").css({
-            //         "display" : "block"
-            //     });
-
-            //     $(".autorization .inner_2").css({
-            //         "display" : "none"
-            //     });
-
-            //     modalCoordleft = ( popupBlock.width() - $(this).width() ) / 2 + $(this).find("i").width();
-                
-            // }
-
-            // var modalCoordTop = $(this).height() + 10;
-
-            // popupBlock.offset({top: modalCoordTop, left: modalCoordleft});
-
-            // popupBlock.css({
-            //     "left" : modalCoordleft + "px"
-            // });
-
+            }            
 
         }
 
@@ -895,33 +879,6 @@ function getHLinesParams() {
 
 
 }
-
-// function getModalsPosition() {
-
-//     // if( $("[data-modal]").length > 0 ) {
-
-//         $(".autorization").each(function() {
-
-//             popupName = $(this).attr("data-modal");
-//             popupLink = $("[data-modalname = '"+ popupName +"']");
-
-//             if(popupName == "modal_2") {
-
-//                 modalCoordleft = $(this).offset().left - ( popupBlock.width() - $(this).width() ) / 2 - $(this).find("i").width();
-
-//             } else if(popupName == "modal_1") {
-
-//                 modalCoordleft = popupLink.offset().left - ( $(this).width() - popupLink.width() ) / 2 + popupLink.find("i").width();
-                
-//             }
-
-//             $(this).offset({left: modalCoordleft});
-
-//         });
-
-//     // }
-
-// }
 
 
 function getHeaderTopPadding() {
