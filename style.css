@@ -2201,13 +2201,12 @@ body.load {
 
 .p_wrapp .left {
     width: 50%;
-    /*padding: 0 9% 0 2%;*/
-    padding: 0 7.5% 0 4%;
+    padding: 0 7.5% 0 10%;
 }
 
 .p_wrapp .right {
     width: 50%;
-    padding: 0 4% 0 7.5%;
+    padding: 0 10% 0 7.5%;
 }
 
 .p_wrapp p {
