@@ -687,7 +687,7 @@ body.load {
     height: 23px;
     background-image: url(img/key_sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 -3px;
+    background-position: 0 -43px;
 }
 
 /*-- /Icons --*/
@@ -1812,10 +1812,6 @@ body.load {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
-}
-
-.sign_wrapp li a.enter_link:hover .key {
-    background-position: 0 -43px;
 }
 
 .card-link_wrapp {
