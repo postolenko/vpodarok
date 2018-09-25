@@ -33,6 +33,86 @@
 
 	<div class="wrapper">
 
+	<!-- Popups -->
+
+	<div class="popup_wrapp" data-popup ="popup_1">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<button type="button" class="close-popup"></button>
+			<div class="popup">			
+				<div class="review_wrapp">
+					<div class="review">
+						<div class="col-1">
+							<div class="photo-box">
+								<img src="img/testimonial.jpg" alt="" />
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="review_title">
+								<div class="col-1">
+									<h3>Далида</h3>
+								</div>
+								<div class="col-2">
+									<div class="rating" id="rate_010" data-rate = "3"></div>
+								</div>
+							</div>
+							<div class="description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudtion</p>
+							</div>
+							<div class="review_footer">
+								<div class="col-1">
+									<p class="date">21.02.2018 г.</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="blue-link close_review">Скрыть отзыв</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_wrapp" data-popup ="popup_2">
+		<div class="inner_wrapp">
+			<div class="popup_bg"></div>
+			<div class="popup popup_3">
+				<button type="button" class="close-popup close-popup_2"></button>
+				<form>
+					<div class="form_4">
+						<div class="form_4_row">
+							<div class="col">
+								<div class="img-box">
+									<img src="img/ozon_ru.jpg" alt="" />
+								</div>
+							</div>
+							<div class="col">
+								<p>Сертификат будет оформлен и отправлен Вам на электронную почту. Пожалуйста, проверяйте папку "спам" во избежание попадания в нее нашего письма. Распечатайте сертификат для предъявления в точке обслуживания партнера.</p>
+							</div>
+						</div>
+						<div class="form_4_row">
+							<div class="col">
+								<button type="button" class="cansel_btn">Отменить</button>
+							</div>
+							<div class="col">
+								<!-- <button type="button" class="green-pill_4">Подтвердить покупку</button> -->
+								<a href="cart_2.html" class="green-pill_4">Подтвердить покупку</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popups -->
+
 	<!-- Header -->
 		
 	<header class="header_wrapp">
@@ -470,7 +550,7 @@
 																</div>
 															</div>
 															<div class="col-2">
-																<a href="cart_2.html" class="card-btn">
+																<a href="#" class="card-btn show_popup" data-popup-name="popup_2">
 																	<span class="col">Получить</span>
 																	<span class="col"><i class="card_icon_2"></i></span>
 																</a>
