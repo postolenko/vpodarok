@@ -213,6 +213,14 @@ $(document).ready(function() {
 
     });
 
+    $(".activation_link").click(function (e) {
+
+        e.preventDefault();
+
+        $(".cabinet_tabs .tab-link[for = 'tab_4']").trigger("click");
+
+    });
+
     // -------------------------
 
     $(".fade-block .close_btn").click(function() {

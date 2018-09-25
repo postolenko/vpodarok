@@ -685,10 +685,9 @@ body.load {
     vertical-align: top;
     width: 23px;
     height: 23px;
-    background-image: url(img/key.png);
+    background-image: url(img/key_sprite.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: 0 -3px;
 }
 
 /*-- /Icons --*/
@@ -1744,12 +1743,6 @@ body.load {
     position: relative;
 }
 
-.sign_wrapp {
-/*    display: inline-block;
-    vertical-align: top;
-    margin: 2px 4% 0 0;*/
-}
-
 .sign_wrapp li {
     display: inline-block;
     vertical-align: top;
@@ -1819,6 +1812,10 @@ body.load {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
+}
+
+.sign_wrapp li a.enter_link:hover .key {
+    background-position: 0 -43px;
 }
 
 .card-link_wrapp {
@@ -4434,7 +4431,7 @@ p i.checked {
     vertical-align: top;
     min-width: 180px;
     cursor: pointer;
-    padding: 10px 2% 8px 2%;
+    padding: 9px 2%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -7329,7 +7326,6 @@ p .ruble {
     padding: 0;
     background-color: transparent;
     background-image: url(img/del.png);
-    /*background-size: contain;*/
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid #f19999;
@@ -7424,11 +7420,11 @@ p .ruble {
     margin: 6px 0;
 }
 
-.h2_wrapp_2 {
+.h2_wrapp_3 {
     margin: 19px 0 22px 0;
 }
 
-.h2_wrapp_2 h2 {
+.h2_wrapp_3 h2 {
     padding: 0 6px;
     text-align: center;
     font-family: "Roboto", "Arial", "Verdana", sans-serif;
@@ -7438,7 +7434,7 @@ p .ruble {
     color: #363636;
 }
 
-.h2_wrapp_2 .line {
+.h2_wrapp_3 .line {
     background-color: #d1d1d1;
 }
 
@@ -7454,7 +7450,6 @@ p .ruble {
 
 .delivery_wrapp {
     margin: 10px 0 55px 0;
-    /*padding: 41px 5% 24px 5%;*/
     padding: 41px 13% 24px 5%;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .2);
